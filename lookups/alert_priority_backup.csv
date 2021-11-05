@@ -1,0 +1,10 @@
+impact,priority,urgency
+low,informational,low
+low,low,medium
+low,medium,high
+medium,low,low
+medium,medium,medium
+medium,high,high
+high,medium,low
+high,high,medium
+high,critical,high

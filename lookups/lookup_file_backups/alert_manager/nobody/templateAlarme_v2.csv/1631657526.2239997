@@ -1,0 +1,5 @@
+occurences,metric,threshold,operator,severity
+3,jitter,100,>,4
+3,latency,100,>,4
+1,linkState,STABLE,!=,1
+3,packet_loss_percent,1,>,4

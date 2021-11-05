@@ -1,0 +1,5 @@
+id,impact,priority,urgency
+4,performance,informational,low
+3,low,low,low
+2,medium,medium,medium
+1,high,high,high

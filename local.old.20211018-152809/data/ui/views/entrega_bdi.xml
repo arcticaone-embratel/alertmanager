@@ -1,0 +1,59 @@
+<form script="consulta_bdi/js/submitButton.js">
+  <label>Entrega BDI [DESENVOLVIMENTO]</label>
+  <fieldset submitButton="false" autoRun="false"></fieldset>
+  <row id="headerRow">
+    <panel id="headerPanel">
+      <html>
+        <h1>
+          Consulta BDI
+        </h1>
+      </html>
+    </panel>
+  </row>
+  <row id="filterRow">
+    <panel id="filterPanel">
+      <input type="text" token="cliente" searchWhenChanged="true">
+        <label>CLIENTE</label>
+        <default></default>
+      </input>
+      <input type="text" token="solucao" searchWhenChanged="true">
+        <label>SOLUCAO</label>
+        <default></default>
+      </input>
+    </panel>
+  </row>
+  <row id="tabelRow">
+    <panel id="tablePanel">
+      <table>
+        <search>
+          <query>
+            | inputlookup bdi_siebel.csv
+            | stats values(SOLUCAO_ID) as SOLUCAO by CLIENTE CLIENTE_ID NOME_FANTASIA NOME_LOGICO TIPO_NEGOCIO TIPO_SERVICO CODIGO_PRIMESYS
+            | eval CLIENTE_ID = round(CLIENTE_ID)
+            | rename *_* as "* *"
+            | where match(CLIENTE, "(?i)$cliente$") AND match(SOLUCAO, "(?i)$solucao$")
+            | table SOLUCAO CLIENTE "CLIENTE ID" "NOME FANTASIA" "NOME LOGICO" "TIPO NEGOCIO" "TIPO SERVICO" "CODIGO PRIMESYS"
+          </query>
+        </search>
+        <option name="count">20</option>
+        <option name="drilldown">row</option>
+        <option name="rowNumbers">true</option>
+      </table>
+    </panel>
+  </row>
+  <row id="cssRow">
+    <panel id="cssPanel" depends="$seeCSS$">
+      <html>
+        <style>
+          div.main-section-body.dashboard-body {
+            padding: 0;
+          }
+          
+          div.dashboard-header.dashboard-header-dashboardheader {
+            display: none;
+          }
+        </style>
+      </html>
+    </panel>
+  </row>
+</form>

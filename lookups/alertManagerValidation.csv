@@ -1,0 +1,164 @@
+metric,edgeId,linkId,solucao,interface,"alert_close_time","alert_time",id,impact,"last_alert_event",message,priority,status,triggers,update,urgency
+latency,1543,4487,null,GE3,,1631882703,7b7a884b5f7914129bfafc2c20dc706e,performance,,"A Latência da interface GE3 excedeu o valor de 100",informational,OPEN,,1631907780,low
+linkState,1930,5208,202183874,GE4,,1631882703,da155ff327b34acad272f4e85c243612,high,,"Link GE4 entrou em status DISCONNECTED",high,OPEN,,1631907780,high
+"packet_loss_percent",939,3338,202041335,GE3,,1631882703,4e0f4d9436abae98ee6f2a0d4d7b590e,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,OPEN,,1631907780,low
+"packet_loss_percent",928,3431,202041324,GE4,1631918402,1631900403,0b2b4a6b5597e7b845620efdbbaa40d8,performance,3,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,1,1631907780,low
+linkState,992,2185,202041375,GE4,1631908803,1631905804,19807eaea0b6946398db92f40c526604,high,3,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,1,1631907780,high
+linkState,1572,4560,202062000,GE4,1631906402,1631905804,a467e0c3d1761bb0c13af0035dabc294,high,3,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,1,1631906280,high
+status,939,3331,202041335,GE4,1631906402,1631905804,00595f99d6f7919a3b11fe40e6f85e41,high,3,"Edge 939 entrou em status DEGRADED",high,CLOSED,1,1631906280,high
+status,939,3338,202041335,GE3,1631906402,1631905804,0742b3f0952cdf0287dba07c6c726ab5,high,3,"Edge 939 entrou em status DEGRADED",high,CLOSED,1,1631906280,high
+linkState,917,2318,202040643,GE4,1631906103,1631905503,46eb5e23eefbdae4f7704a30be566cba,high,3,"Link GE4 entrou em status UNSTABLE",high,CLOSED,1,1631905980,high
+"packet_loss_percent",968,2225,202040664,GE4,1631905503,1631893203,4f25e7e5879013eaf9ebe10faa1ea45c,performance,3,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,1,1631905080,low
+status,939,3331,202041335,GE4,1631904604,1631895304,96f525783605c32914c5a8d62c2fe0fd,high,,"Edge 939 entrou em status DEGRADED",high,CLOSED,0,1631900280,high
+status,939,3338,202041335,GE3,1631904604,1631895304,e0d34720f2369e67593a2f7acdd7df76,high,,"Edge 939 entrou em status DEGRADED",high,CLOSED,0,1631900280,high
+"packet_loss_percent",984,2221,202041367,GE4,1631889903,1631882703,c952d4a7902884aabaa825695c2f2984,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,1631889780,low
+linkState,424,1031,20197447,GE4,1631885703,1631885104,c324dae374ce020742b4d753be473aaf,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,424,1031,20197447,GE4,1631885404,1631885104,c324dae374ce020742b4d753be473aaf,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1273,3214,202040637,GE4,1631884803,1631884202,417c512f83cd85841bb89517062644d6,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,978,3207,202041364,GE4,1631884803,1631884202,37165b3ade276a9bb6bdbc2960bc2081,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1273,3214,202040637,GE4,1631884504,1631883602,2ea48bb7ac44675d3a4f47556d8ae51c,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,978,3207,202041364,GE4,1631884504,1631884202,37165b3ade276a9bb6bdbc2960bc2081,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1273,3214,202040637,GE4,1631883903,1631883602,2ea48bb7ac44675d3a4f47556d8ae51c,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+"packet_loss_percent",502,1137,201912648,GE3,1631883602,1631882703,30303e0c3b90c9420081e5c078a5dcd1,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+latency,969,,202040665,GE3,1631882104,1631880004,08ff0f4b2b8ad8d13b8b839db980b709,performance,,"A Latência da interface GE3 excedeu o valor de 100",informational,CLOSED,,,low
+linkState,379,,20197448,GE4,1631882104,1631881803,30b6d92857b0039ec02f8fc14d81dbe3,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1567,,202061990,GE3,1631879703,1631878503,71a472ab5727c7ee41899fe9a008dcb5,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1567,,202061990,GE3,1631879403,1631878203,883e92253efc5e037dbaa39c65a3f89b,high,,"Edge 1567 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,1566,,202162228,GE4,1631878503,1631834104,dcb15fb341f349119c6f6ebe47f90fe5,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1566,,202162228,GE4,1631878503,1631834104,b587ae3a1826edc539e07e67d34a8ffe,high,,"Edge 1566 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,433,,20197420,GE4,1631878203,1631876703,d446686ef8aac89ede410b61ab4ca4f6,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,433,,20197420,GE3,1631877903,1631876703,e3c70334923cccdd83db7008ee22ee43,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+status,433,,20197420,GE3,1631877903,1631876403,8a48ddc3cbe3b0d2297b1746a53cf3bc,high,,"Edge 433 entrou em status OFFLINE",high,CLOSED,,,high
+status,433,,20197420,GE4,1631877903,1631876403,59f058bb59c9a3f16dbd163a44406098,high,,"Edge 433 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,1006,,202041385,GE4,1631875203,1631874903,6ae5028c69fdeb6c6c502210f1b9f297,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",1119,,"202061979  ICAT#SDW-VELO-RCE-GER#00",GE4,1631862304,1631851802,48775823a3ce6a37bb022013af612f5b,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,408,,20197443,GE4,1631858703,1631858404,a2e1c50105ef16b467f0420daaf178f7,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+"packet_loss_percent",948,,202040651,GE4,1631853004,1631848803,c7f1354646dfca63aa2e167135498b30,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",939,,202041335,GE3,1631850902,1631823303,0551b4767f6027911d65085d9f337c55,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",948,,202040651,GE3,1631849403,1631842204,dec46b8eecfffdca85e97acb22e86875,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",968,,202040664,GE4,1631849403,1631823303,fd2b4ef75294c65980a8ee01ae9ea859,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,464,,202168682,GE3,1631845204,1631844902,03c41dfa1e342e162d50956e785b1999,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+status,922,,202038477,SFP2,1631840404,1631840104,0b6d093bb465d368bcefc97541be011c,high,,"Edge 922 entrou em status OFFLINE",high,CLOSED,,,high
+status,924,,202041392,SFP2,1631840404,1631840104,9d11effb5b8131d9514e004331be99d0,high,,"Edge 924 entrou em status OFFLINE",high,CLOSED,,,high
+status,948,,202040651,GE3,1631837703,1631837403,98c8047a8e7aaf93239bbc197296dc33,high,,"Edge 948 entrou em status DEGRADED",high,CLOSED,,,high
+status,948,,202040651,GE4,1631837703,1631837403,973b08cad26685f84622b16cce7e869e,high,,"Edge 948 entrou em status DEGRADED",high,CLOSED,,,high
+"packet_loss_percent",1273,,202040637,GE4,1631837403,1631826603,9481ee01bdf4e3759cf2e8e298fe3440,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1273,,202040637,GE4,1631836502,1631836202,240cb1a1df5440ae608a3802c4baa5e1,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,952,,202040636,GE4,1631835003,1631828704,d75dcd16e8f400cafbba5b985872ba3f,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,379,,20197448,GE4,1631834403,1631834104,c983472625eebba65946ea4bda8ef1f0,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",984,,202041367,GE4,1631829603,1631823303,cc399327b9bc1cafb42feda289c0017e,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",1562,,202061984,GE4,1631829003,1631823303,782793b4f86e9e36501c98c48fa17e40,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,979,,202040627,GE3,1631828403,1631823303,542733bc56f7e0b2dbabb1459c0679f1,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,979,,202040627,GE4,1631828403,1631823303,986ed899c6da37cb73e4eaa014a14929,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+status,979,,202040627,GE3,1631828403,1631823303,bc7d008b335be025b60f2b7322ced49b,high,,"Edge 979 entrou em status OFFLINE",high,CLOSED,,,high
+status,979,,202040627,GE4,1631828403,1631823303,19883e714f6f0bf7d68dcb992d99ff5a,high,,"Edge 979 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,1007,,202040671,GE3,1631825104,1631823303,8caf4c5f08607bedea02b4a1b358f419,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1007,,202040671,GE4,1631825104,1631823303,06874538287bdcba73e515eaa8292b5a,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1007,,202040671,GE3,1631825104,1631823303,27d4c24670cdc1315b5a98e7efe06c90,high,,"Edge 1007 entrou em status OFFLINE",high,CLOSED,,,high
+status,1007,,202040671,GE4,1631825104,1631823303,acba4add1eca6ebd4abcd7a23406f7fa,high,,"Edge 1007 entrou em status OFFLINE",high,CLOSED,,,high
+status,1269,,202059976,GE3,1631823904,1631823303,1fc167756079f9cd766164a4db6a63ee,high,,"Edge 1269 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,1269,,202059976,GE3,1631816703,1631816403,c41b9587f924ffe15112cfbb7479451b,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1269,,202059976,GE3,1631816703,1631816403,5d44a3eaef2c2108919d56a130e5938b,high,,"Edge 1269 entrou em status OFFLINE",high,CLOSED,,,high
+status,1269,,202059976,GE3,1631815803,1631814903,d56c56b4a4e2e3653288f28012147baf,high,,"Edge 1269 entrou em status OFFLINE",high,CLOSED,,,high
+status,1269,,202059976,GE3,1631815203,1631814903,d56c56b4a4e2e3653288f28012147baf,high,,"Edge 1269 entrou em status OFFLINE",high,CLOSED,,,high
+status,1269,,202059976,GE3,1631813703,1631813403,7d13da1c21b2b2c75652aa47ce6f9bcd,high,,"Edge 1269 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,1564,,202162232,GE3,1631811003,1631810708,b2efd2d72733c67c61d7b5ba0ecf8d50,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+"packet_loss_percent",984,,201922181,GE4,1631806803,1631795703,9849c64cb40dc31c3aab46a367c400dd,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+status,939,,202059393,GE3,1631806803,1631806503,c2a30694c5507f5c9b0b1caac49a1c3f,high,,"Edge 939 entrou em status DEGRADED",high,CLOSED,,,high
+status,939,,202059393,GE4,1631806803,1631806503,a4fe2d2e878d2655e2ebc1c07cfa74fc,high,,"Edge 939 entrou em status DEGRADED",high,CLOSED,,,high
+status,433,,20197441,GE3,1631806503,1631806203,e3dfd5fec51adb040f6feedfbf8097a4,high,,"Edge 433 entrou em status DEGRADED",high,CLOSED,,,high
+status,433,,20197441,GE4,1631806503,1631806203,54e03994446cf4057665657cc553ea98,high,,"Edge 433 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631802004,1631801702,27067a2ab1ad5f9fb046a50ae6a1504d,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631800805,1631800502,200c1e69531e83ba5d15705684fab499,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,431,,20197441,GE4,1631800502,1631800202,6cee6f9a335440c43618b2919bcf6052,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1562,,202162232,GE3,1631799002,1631682304,b81acbc83434b04190746fac2189a415,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1291,,null,GE4,1631797804,1631797204,0ecd5d14b90becd252a53cb628d10e9a,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+"packet_loss_percent",502,,20197441,GE3,1631797204,1631761803,8a1285301b24f37c1da224ddfb3eef1e,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1578,,202162232,GE4,1631796903,1631795403,853971f352ea87ae760764626c791b11,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,939,,202059393,GE3,1631796604,1631796303,137c2b63a841108e5af02cdee4f90874,high,,"Edge 939 entrou em status DEGRADED",high,CLOSED,,,high
+status,939,,202059393,GE4,1631796604,1631796303,8b0da37f828efe071a7444cb5b6ad328,high,,"Edge 939 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,1578,,202162232,GE3,1631796303,1631795103,6fe1cfe6af35afcb6b9f4c4d8069763b,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+status,1578,,202162232,GE3,1631796303,1631795103,39b4012efc16ba36c3bb800ed6beefb2,high,,"Edge 1578 entrou em status DEGRADED",high,CLOSED,,,high
+status,1578,,202162232,GE4,1631796303,1631795103,a7834d450f24a498c6746fedcdeaa768,high,,"Edge 1578 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,1573,,202162232,GE4,1631796003,1631795703,685ca5f4550c8d321ba5f8a812c5b91c,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1573,,202162232,GE4,1631796003,1631795403,105d095b78b3497d32a2297bb19d37d6,high,,"Edge 1573 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,430,,20197441,GE4,1631791503,1631791203,0054b56e26cad03ab585e363aab1c693,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631791203,1631790903,4a9a9cf0277919019c2330f74aeaf2c2,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,2088,,null,GE1,1631787603,1631784303,6960c55eca434a14a4ceb837139be838,high,,"Link GE1 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1585,,202162232,GE2,1631786104,1631785803,de1eb7f0d48190f784b44cd0b0c3070a,high,,"Link GE2 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631781903,1631781604,57486bb13ce6a7d67a9b700ad7a8c760,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1577,,202162232,GE3,1631780704,1631780402,097fb52f57d813f800094aa74eb70449,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,963,,201922181,GE4,1631771703,1631771403,3617cb875daa0959598d9e7eaab44ab2,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,963,,201922181,GE4,1631770204,1631769904,b46a499b11881028e4145a05e50eace4,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",948,,201922181,GE4,1631768103,1631739604,0d2793ff89f37ef939c5621de5401cb2,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",948,,201922181,GE3,1631767804,1631742302,9f25aedf0bd4af8963178282cd8a3215,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",968,,201922181,GE4,1631764203,1631736902,1d207fa444ae665c389c22860242ea27,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",939,,202059393,GE3,1631762402,1631703303,89328155b849c22dcecff8da6640e567,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+latency,948,,201922181,GE3,1631759403,1631742302,002816e7f26199405c0a67f2ec0c6139,performance,,"A Latência da interface GE3 excedeu o valor de 100",informational,CLOSED,,,low
+latency,948,,201922181,GE4,1631759403,1631740504,cdbf7ffe7de8e407204deb1cb770f510,performance,,"A Latência da interface GE4 excedeu o valor de 100",informational,CLOSED,,,low
+linkState,1119,,202162232,GE3,1631755802,1631755203,c6ff3e95b2d6abc72348790f3784815c,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",1562,,202162232,GE4,1631752203,1631741703,f0383c5c5a04e321cc35673807426d13,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+latency,408,,20197441,GE4,1631751603,1631737202,521ef4ebb601105d272cead1e29c60c3,performance,,"A Latência da interface GE4 excedeu o valor de 100",informational,CLOSED,,,low
+status,1270,,202059976,GE3,1631751304,1631751004,94bc3e305e12c09a7817defc21e4b0c7,high,,"Edge 1270 entrou em status DEGRADED",high,CLOSED,,,high
+"packet_loss_percent",928,,202059393,GE4,1631749804,1631737202,1ac99566871aef688a1131bf5fe04611,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,948,,201922181,GE3,1631748905,1631748603,299c2e7423b023aa9d979a4923feb121,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1006,,201922181,GE4,1631748603,1631742302,4660f2b84856d2fd1e727a4cbfbbb999,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,948,,201922181,GE3,1631746803,1631746502,a11137c7584a23bc9e29959d0c81ce39,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+"packet_loss_percent",1574,,202162232,GE3,1631746203,1631735704,67fc0a47ba96ac9f8e9a8a4eaa3b4408,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",984,,201922181,GE4,1631745603,1631733303,003359863ae28940d074b2f2bc152a12,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+status,968,,201922181,GE3,1631743504,1631743203,bcee4f37b7b2d9c3e5e5e23a79292505,high,,"Edge 968 entrou em status DEGRADED",high,CLOSED,,,high
+status,968,,201922181,GE4,1631743504,1631743203,824fc3a2fcea395325d5330d2224bdee,high,,"Edge 968 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631742904,1631742603,4d3776b1cfba9c0199f236d5a1dde081,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",460,,202058101,SFP2,1631741703,1631702104,94da2039df603b28a275218c684aa736,performance,,"A perda de pacotes da interface SFP2 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,948,,201922181,GE4,1631741402,1631741104,0400689888d9928ed49d12b0ec5df585,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,948,,201922181,GE3,1631739304,1631739004,74c20b8dce3c3a6945937d84940c64bb,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,948,,201922181,GE4,1631739304,1631739004,35b96c65dd3212649107882a2a127d38,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1562,,202162232,GE3,1631738403,1631738104,fd6d112ff4306c53caa55066b4fdf19f,high,,"Edge 1562 entrou em status DEGRADED",high,CLOSED,,,high
+status,1562,,202162232,GE4,1631738403,1631738104,18978f1b7fe639fe87d9c3d552770953,high,,"Edge 1562 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631736903,1631736304,d84cac9b0367cd57ee54fbff0452289e,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+status,1584,,202162232,GE4,1631736903,1631736604,3530f7a0be5faf5f0e0f80bddea687a4,high,,"Edge 1584 entrou em status OFFLINE",high,CLOSED,,,high
+"packet_loss_percent",1007,,201922181,GE3,1631736604,1631724604,f1eb6356eddabbfe121ec723ac217346,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,410,,20197441,GE4,1631735104,1631734804,74fa1a87eccf102a1a8d325205383818,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1585,,202162232,GE2,1631734804,1631734503,69bd669a8e3128cdbcde1de339686b12,high,,"Link GE2 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,465,,202058101,GE3,1631733903,1631733303,ed2a730d51a225bcfe3a143d81323f73,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+linkState,1269,,202059976,GE3,1631733604,1631733303,a97742ce4b192e996a3ca442e49ac210,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,941,,201922181,GE4,1631733604,1631733004,cb3234b01271916e43a14e7d367a4b5a,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+status,1269,,202059976,GE3,1631733604,1631733303,5234b44f3e003995ff27f8ecd1743181,high,,"Edge 1269 entrou em status OFFLINE",high,CLOSED,,,high
+"packet_loss_percent",968,,201922181,GE4,1631732103,1631720704,13d3f22c0a089f86d24783348141689d,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1575,,202162232,GE3,1631731202,1631730903,7d52bdc7624e5ccd53c82a0029a96488,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1575,,202162232,GE3,1631731202,1631730903,f304d84b50eec8bf272b1ae148e9614a,high,,"Edge 1575 entrou em status DEGRADED",high,CLOSED,,,high
+status,1575,,202162232,GE4,1631731202,1631730903,4651870b28529d92612495da9b11acf4,high,,"Edge 1575 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,997,,201922181,GE4,1631730302,1631728803,28759400ce5824c7938e5638068686b4,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+status,1584,,202162232,GE4,1631729103,1631728803,1d0aba4fb079763b1404b15a314f1f76,high,,"Edge 1584 entrou em status OFFLINE",high,CLOSED,,,high
+latency,1564,,202162232,GE4,1631727602,1631717103,eafff283c8c7b440e5ad3f139a8131ff,performance,,"A Latência da interface GE4 excedeu o valor de 100",informational,CLOSED,,,low
+latency,1567,,202162232,GE3,1631727602,1631716504,17aa5ed1fbbdddf0cca2acbe4302fd7e,performance,,"A Latência da interface GE3 excedeu o valor de 100",informational,CLOSED,,,low
+linkState,1273,,201922181,GE4,1631727602,1631727303,24d4226e3f0a673010250b6594eac327,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+status,992,,201922181,GE3,1631726703,1631726402,bc102cea5f0cf767fa0479e0afaae855,high,,"Edge 992 entrou em status DEGRADED",high,CLOSED,,,high
+status,992,,201922181,GE4,1631726703,1631726402,41d7a504d85fc6ac815067fc5c787f3e,high,,"Edge 992 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,994,,201922181,GE3,1631724604,1631724004,d18e2a85c9a150be4dc1306eba41abae,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,994,,201922181,GE4,1631724604,1631724004,725e041850299d89c151c2719d9f8c43,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,994,,201922181,GE3,1631724604,1631723704,b03728b9d71d3eb2a63028ab323b3774,high,,"Edge 994 entrou em status OFFLINE",high,CLOSED,,,high
+status,994,,201922181,GE4,1631724604,1631723704,fa10f96801e50f445c42e111f0a7ba31,high,,"Edge 994 entrou em status OFFLINE",high,CLOSED,,,high
+linkState,1575,,202162232,GE3,1631724004,1631723704,d233851596cdd1580b102acf4d3da5b1,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1575,,202162232,GE4,1631724004,1631723704,0c6553e321844c55929d8054885d6fdd,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+status,1575,,202162232,GE3,1631724004,1631723704,02eeaccbbef17cfb4c32319708be8b76,high,,"Edge 1575 entrou em status DEGRADED",high,CLOSED,,,high
+status,1575,,202162232,GE4,1631724004,1631723704,369a34ee2b09e78e69f1f4bd4e4613f2,high,,"Edge 1575 entrou em status DEGRADED",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631713204,1631712904,ec1515cf097cde55ef2f86ba9231bbc9,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",1119,,202162232,GE4,1631712603,1631710503,cecdbf1e906f43f403e837f2d7e86e35,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,2088,,null,GE2,1631712002,1631711704,da7e367e82b04a4aa78ec6abc11bcb28,high,,"Link GE2 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",502,,20197441,GE3,1631710804,1631677803,94aafc4a80f7a4f6264eff5168e6053b,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1564,,202162232,GE3,1631707203,1631706903,1287dfb9944535223b5d431b5bb6b3a7,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",1580,,202162232,GE4,1631694903,1631693403,a4cba3bd5affbc97681b5d4cd9d0182d,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1047,,202058101,GE4,1631694003,1631693703,cb0531c24c4256ebefb1ae9fbd8a3435,high,,"Link GE4 entrou em status UNSTABLE",high,CLOSED,,,high
+"packet_loss_percent",1273,,201922181,GE4,1631688602,1631677803,681cf57846a62d49b5328466a4c8eee4,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",1119,,202162232,GE4,1631680204,1631676302,c2ddc95305fe7894543f22726f0394c5,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1269,,202059976,GE3,1631679003,1631677803,012e337d9999cf958ee03538d07078fc,high,,"Link GE3 entrou em status UNSTABLE",high,CLOSED,,,high
+linkState,1273,,201922181,GE4,1631677803,1631677502,bc0bbb9397e502563fdc8044289fe2b5,high,,"Link GE4 entrou em status DISCONNECTED",high,CLOSED,,,high
+"packet_loss_percent",968,,201922181,GE4,1631676902,1631659803,79c9a73a21f6309fff333ba7c5445c80,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",939,,202059393,GE3,1631676003,1631659803,43302837a9e0f8e12b1d0c8699bcd340,performance,,"A perda de pacotes da interface GE3 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",984,,201922181,GE4,1631672703,1631661903,1fef2c6e930c1ef8f4e9e886db6e76e2,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",1012,,201922181,GE4,1631671503,1631659803,3a608d5bf96e60f262ba5b201b87650d,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",1586,,202162232,GE4,1631671503,1631659803,51e3dad5f24822d4ed1f4e344ad22ba5,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",467,,202058101,GE4,1631671203,1631659803,3cb320f5b6faefadb360b0fa5bc47782,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+"packet_loss_percent",999,,201922181,GE4,1631664003,1631659803,d888f8545619d6b9d23c0ecf95c8c8b3,performance,,"A perda de pacotes da interface GE4 excedeu o valor de 1%",informational,CLOSED,,,low
+linkState,1572,,202162232,GE3,1631662803,1631662203,54fb5538e3f5c13e92036db5fc290cb7,high,,"Link GE3 entrou em status DISCONNECTED",high,CLOSED,,,high

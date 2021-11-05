@@ -1,0 +1,716 @@
+"_key",templateName,thresholdDuration,thresholdIndex,thresholdMessage,thresholdMetric,thresholdSeverityCode,thresholdType,thresholdValue
+60ca268ab24da969131307b0,"Template FORTINET",10,"","CPU acima de %thresholdValue%% por mais de 10 minutos",cpu,4,">",50
+60ca268ab24da969131307b1,"Template FORTINET",10,"","Memoria acima de %thresholdValue%% por mais de 10 minutos",mem,4,">",50
+60ca268ab24da969131307b2,"Template FORTINET",10,"","Disco acima de %thresholdValue%% por mais de 10 minutos",disk,4,">",50
+60ca268bb24da969131307b3,"Template FORTINET",10,wan,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268bb24da969131307b4,"Template FORTINET",10,"vpn-033-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268bb24da969131307b5,"Template FORTINET",10,"vpn-033-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268bb24da969131307b6,"Template FORTINET",10,"vpn-033-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268bb24da969131307b7,"Template FORTINET",10,"vpn-033-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268cb24da969131307b8,"Template FORTINET",10,"vpn-033-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268cb24da969131307b9,"Template FORTINET",10,"vpn-033-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268cb24da969131307ba,"Template FORTINET",10,lan3,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268cb24da969131307bb,"Template FORTINET",10,VPNIW1O2,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268db24da969131307bc,"Template FORTINET",10,VPNIW1O1,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268db24da969131307bd,"Template FORTINET",10,"VPN-MPLS3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268db24da969131307be,"Template FORTINET",10,"VPN-MPLS2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268db24da969131307bf,"Template FORTINET",10,"VPN-MPLS1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268db24da969131307c0,"Template FORTINET",10,"VPN-L2L-MIRO","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268db24da969131307c1,"Template FORTINET",10,"Link-Wan-1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c2,"Template FORTINET",10,"vpn-010-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c3,"Template FORTINET",10,"vpn-010-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c4,"Template FORTINET",10,"vpn-010-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c5,"Template FORTINET",10,"vpn-010-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c6,"Template FORTINET",10,"vpn-010-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c7,"Template FORTINET",10,"vpn-010-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c8,"Template FORTINET",10,"vpn-032-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268eb24da969131307c9,"Template FORTINET",10,"vpn-032-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307ca,"Template FORTINET",10,"vpn-032-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307cb,"Template FORTINET",10,"vpn-032-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307cc,"Template FORTINET",10,"vpn-032-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307cd,"Template FORTINET",10,"vpn-032-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307ce,"Template FORTINET",10,"vpn-012-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307cf,"Template FORTINET",10,"vpn-012-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307d0,"Template FORTINET",10,"vpn-012-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307d1,"Template FORTINET",10,"vpn-012-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307d2,"Template FORTINET",10,"vpn-012-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307d3,"Template FORTINET",10,"vpn-012-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307d4,"Template FORTINET",10,"vpn-013-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca268fb24da969131307d5,"Template FORTINET",10,"vpn-013-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307d6,"Template FORTINET",10,"vpn-013-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307d7,"Template FORTINET",10,"vpn-013-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307d8,"Template FORTINET",10,"vpn-013-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307d9,"Template FORTINET",10,"vpn-013-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307da,"Template FORTINET",10,"vpn-019-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307db,"Template FORTINET",10,"vpn-019-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307dc,"Template FORTINET",10,"vpn-019-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307dd,"Template FORTINET",10,"vpn-019-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307de,"Template FORTINET",10,"vpn-019-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307df,"Template FORTINET",10,"vpn-019-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e0,"Template FORTINET",10,"vpn-023-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e1,"Template FORTINET",10,"vpn-023-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e2,"Template FORTINET",10,"vpn-023-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e3,"Template FORTINET",10,"vpn-023-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e4,"Template FORTINET",10,"vpn-023-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e5,"Template FORTINET",10,"vpn-023-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2690b24da969131307e6,"Template FORTINET",10,"vpn-031-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307e7,"Template FORTINET",10,"vpn-031-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307e8,"Template FORTINET",10,"vpn-031-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307e9,"Template FORTINET",10,"vpn-031-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307ea,"Template FORTINET",10,"vpn-031-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307eb,"Template FORTINET",10,"vpn-031-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307ec,"Template FORTINET",10,"vpn-030-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307ed,"Template FORTINET",10,"vpn-030-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307ee,"Template FORTINET",10,"vpn-030-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307ef,"Template FORTINET",10,"vpn-030-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f0,"Template FORTINET",10,"vpn-030-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f1,"Template FORTINET",10,"vpn-030-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f2,"Template FORTINET",10,"vpn-028-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f3,"Template FORTINET",10,"vpn-028-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f4,"Template FORTINET",10,"vpn-028-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f5,"Template FORTINET",10,"vpn-028-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2691b24da969131307f6,"Template FORTINET",10,"vpn-028-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307f7,"Template FORTINET",10,"vpn-028-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307f8,"Template FORTINET",10,"vpn-029-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307f9,"Template FORTINET",10,"vpn-029-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307fa,"Template FORTINET",10,"vpn-029-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307fb,"Template FORTINET",10,"vpn-029-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307fc,"Template FORTINET",10,"vpn-029-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307fe,"Template FORTINET",10,"vpn-029-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da969131307ff,"Template FORTINET",10,"vpn-017-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130800,"Template FORTINET",10,"vpn-017-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130801,"Template FORTINET",10,"vpn-017-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130802,"Template FORTINET",10,"vpn-017-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130803,"Template FORTINET",10,"vpn-017-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130804,"Template FORTINET",10,"vpn-017-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130805,"Template FORTINET",10,"vpn-011-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2692b24da96913130806,"Template FORTINET",10,"vpn-011-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130807,"Template FORTINET",10,"vpn-011-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130808,"Template FORTINET",10,"vpn-011-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130809,"Template FORTINET",10,"vpn-011-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da9691313080a,"Template FORTINET",10,"vpn-011-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da9691313080b,"Template FORTINET",10,"vpn-018-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da9691313080c,"Template FORTINET",10,"vpn-018-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da9691313080d,"Template FORTINET",10,"vpn-018-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da9691313080e,"Template FORTINET",10,"vpn-018-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da9691313080f,"Template FORTINET",10,"vpn-018-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130810,"Template FORTINET",10,"vpn-018-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130811,"Template FORTINET",10,"vpn-016-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130812,"Template FORTINET",10,"vpn-016-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130813,"Template FORTINET",10,"vpn-016-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130814,"Template FORTINET",10,"vpn-016-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2693b24da96913130815,"Template FORTINET",10,"vpn-016-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da96913130816,"Template FORTINET",10,"vpn-016-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da96913130817,"Template FORTINET",10,"vpn-022-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da96913130818,"Template FORTINET",10,"vpn-022-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da96913130819,"Template FORTINET",10,"vpn-022-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da9691313081a,"Template FORTINET",10,"vpn-022-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da9691313081b,"Template FORTINET",10,"vpn-022-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da9691313081c,"Template FORTINET",10,"vpn-022-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da9691313081d,"Template FORTINET",10,"vpn-005-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da9691313081e,"Template FORTINET",10,"vpn-005-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da9691313081f,"Template FORTINET",10,"vpn-005-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da96913130820,"Template FORTINET",10,"vpn-005-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2694b24da96913130821,"Template FORTINET",10,"vpn-005-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130822,"Template FORTINET",10,"vpn-005-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130823,"Template FORTINET",10,"vpn-008-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130824,"Template FORTINET",10,"vpn-008-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130825,"Template FORTINET",10,"vpn-008-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130826,"Template FORTINET",10,"vpn-008-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130827,"Template FORTINET",10,"vpn-008-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130828,"Template FORTINET",10,"vpn-008-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130829,"Template FORTINET",10,"vpn-007-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da9691313082a,"Template FORTINET",10,"vpn-007-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da9691313082b,"Template FORTINET",10,"vpn-007-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da9691313082c,"Template FORTINET",10,"vpn-007-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da9691313082d,"Template FORTINET",10,"vpn-007-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da9691313082e,"Template FORTINET",10,"vpn-007-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da9691313082f,"Template FORTINET",10,"vpn-006-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2695b24da96913130830,"Template FORTINET",10,"vpn-006-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130831,"Template FORTINET",10,"vpn-006-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130832,"Template FORTINET",10,"vpn-006-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130833,"Template FORTINET",10,"vpn-006-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130834,"Template FORTINET",10,"vpn-006-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130835,"Template FORTINET",10,"vpn-027-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130836,"Template FORTINET",10,"vpn-027-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130837,"Template FORTINET",10,"vpn-027-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130838,"Template FORTINET",10,"vpn-027-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da96913130839,"Template FORTINET",10,"vpn-027-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da9691313083a,"Template FORTINET",10,"vpn-027-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da9691313083b,"Template FORTINET",10,"vpn-024-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da9691313083c,"Template FORTINET",10,"vpn-024-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da9691313083d,"Template FORTINET",10,"vpn-024-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2696b24da9691313083e,"Template FORTINET",10,"vpn-024-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313083f,"Template FORTINET",10,"vpn-024-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130840,"Template FORTINET",10,"vpn-024-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130841,"Template FORTINET",10,"vpn-003-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130842,"Template FORTINET",10,"vpn-003-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130843,"Template FORTINET",10,"vpn-003-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130844,"Template FORTINET",10,"vpn-003-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130845,"Template FORTINET",10,"vpn-003-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130846,"Template FORTINET",10,"vpn-003-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130847,"Template FORTINET",10,"vpn-004-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130848,"Template FORTINET",10,"vpn-004-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da96913130849,"Template FORTINET",10,"vpn-004-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313084a,"Template FORTINET",10,"vpn-004-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313084b,"Template FORTINET",10,"vpn-004-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313084c,"Template FORTINET",10,"vpn-004-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313084d,"Template FORTINET",10,wan1,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313084e,"Template FORTINET",10,internal2,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2697b24da9691313084f,"Template FORTINET",10,internal1,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130850,"Template FORTINET",10,"SDWAN_WAN_2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130851,"Template FORTINET",10,"SDWAN_WAN_1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130852,"Template FORTINET",10,"SDWAN_MPLS_2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130853,"Template FORTINET",10,"SDWAN_MPLS_1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130854,"Template FORTINET",10,"vpn-025-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130855,"Template FORTINET",10,"vpn-025-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130856,"Template FORTINET",10,"vpn-025-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130857,"Template FORTINET",10,"vpn-025-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130858,"Template FORTINET",10,"vpn-025-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130859,"Template FORTINET",10,"vpn-025-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da9691313085a,"Template FORTINET",10,"vpn-014-w2-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da9691313085b,"Template FORTINET",10,"vpn-014-w2-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da9691313085c,"Template FORTINET",10,"vpn-014-w2-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da9691313085d,"Template FORTINET",10,"vpn-014-w1-w3","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da9691313085e,"Template FORTINET",10,"vpn-014-w1-w2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da9691313085f,"Template FORTINET",10,"vpn-014-w1-w1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2698b24da96913130860,"Template FORTINET",10,port9,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130861,"Template FORTINET",10,port3,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130862,"Template FORTINET",10,port1,"Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130863,"Template FORTINET",10,"Transito-IBM","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130864,"Template FORTINET",10,"SD_WAN_2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130865,"Template FORTINET",10,"SD_WAN_1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130866,"Template FORTINET",10,"SD_MPLS_2","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130867,"Template FORTINET",10,"SD_MPLS_1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130868,"Template FORTINET",10,"Link-WAN-T9","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da96913130869,"Template FORTINET",10,"Link-WAN-T1","Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%",session,1,">",50
+60ca2699b24da9691313086a,"Template FORTINET",10,"","Link acusou mais de %thresholdValue%% de utilização de banda","bandwidth_perc_1m",4,">",70
+60ca2699b24da9691313086b,"Template FORTINET",10,StandAlone,"Erro de coleta no equipamento ","HA-STATUS",4,"=","erro de coleta"
+60ca2699b24da9691313086c,"Template FORTINET",10,StandAlone,"Equipamento com status disable","HA-STATUS",3,"=",enable
+60ca2699b24da9691313086d,"Template FORTINET",10,"Primário","Equipamento HA primário com status diferente de ENABLE","HA-STATUS",4,"<>",enable
+60ca2699b24da9691313086e,"Template FORTINET",10,"Secundário","Equipamento HA secundário com status diferente de ENABLE","HA-STATUS",4,"<>",enable
+60ca269ab24da9691313086f,"Template FORTINET",10,"Check_GW_Nicola - L2L-2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269ab24da96913130870,"Template FORTINET",10,"Check_GW_Nicola - L2L-2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269ab24da96913130871,"Template FORTINET",10,"Check_GW_Nicola - L2L-2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269ab24da96913130872,"Template FORTINET",10,"Check_HUB - VPN-L2L","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269ab24da96913130873,"Template FORTINET",10,"Check_HUB - VPN-L2L","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269ab24da96913130874,"Template FORTINET",10,"Check_HUB - VPN-L2L","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269ab24da96913130875,"Template FORTINET",10,"Check_HUB - VPNIW1O1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269ab24da96913130876,"Template FORTINET",10,"Check_HUB - VPNIW1O1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269ab24da96913130877,"Template FORTINET",10,"Check_HUB - VPNIW1O1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269ab24da96913130878,"Template FORTINET",10,"Check_INTERNET - Internet_GVT","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269ab24da96913130879,"Template FORTINET",10,"Check_INTERNET - Internet_GVT","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269ab24da9691313087a,"Template FORTINET",10,"Check_INTERNET - Internet_GVT","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269bb24da9691313087b,"Template FORTINET",10,"Check_INTERNET - L2L-1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269bb24da9691313087c,"Template FORTINET",10,"Check_INTERNET - L2L-1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269bb24da9691313087d,"Template FORTINET",10,"Check_INTERNET - L2L-1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269bb24da9691313087e,"Template FORTINET",10,"Check_INTERNET - L2L-2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269bb24da9691313087f,"Template FORTINET",10,"Check_INTERNET - L2L-2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269bb24da96913130880,"Template FORTINET",10,"Check_INTERNET - L2L-2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269bb24da96913130881,"Template FORTINET",10,"Check_INTERNET - VPN-L2L","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269bb24da96913130882,"Template FORTINET",10,"Check_INTERNET - VPN-L2L","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269bb24da96913130883,"Template FORTINET",10,"Check_INTERNET - VPN-L2L","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269bb24da96913130884,"Template FORTINET",10,"Check_INTERNET - wan","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269bb24da96913130885,"Template FORTINET",10,"Check_INTERNET - wan","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269bb24da96913130886,"Template FORTINET",10,"Check_INTERNET - wan","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269bb24da96913130887,"Template FORTINET",10,"Check_RT_DC - Internet_GVT","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269bb24da96913130888,"Template FORTINET",10,"Check_RT_DC - Internet_GVT","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269bb24da96913130889,"Template FORTINET",10,"Check_RT_DC - Internet_GVT","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269bb24da9691313088a,"Template FORTINET",10,"Check_RT_DC - L2L-1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269bb24da9691313088b,"Template FORTINET",10,"Check_RT_DC - L2L-1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269cb24da9691313088c,"Template FORTINET",10,"Check_RT_DC - L2L-1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269cb24da9691313088d,"Template FORTINET",10,"Check_RT_DC - VPN-L2L","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269cb24da9691313088e,"Template FORTINET",10,"Check_RT_DC - VPN-L2L","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269cb24da9691313088f,"Template FORTINET",10,"Check_RT_DC - VPN-L2L","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269cb24da96913130890,"Template FORTINET",10,"DNS - Link-Wan-1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269cb24da96913130891,"Template FORTINET",10,"DNS - Link-Wan-1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269cb24da96913130892,"Template FORTINET",10,"DNS - Link-Wan-1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269cb24da96913130893,"Template FORTINET",10,"Default_DNS - Link-WAN-T1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269cb24da96913130894,"Template FORTINET",10,"Default_DNS - Link-WAN-T1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269cb24da96913130895,"Template FORTINET",10,"Default_DNS - Link-WAN-T1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269cb24da96913130896,"Template FORTINET",10,"Default_DNS - Link-WAN-T9","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269cb24da96913130897,"Template FORTINET",10,"Default_DNS - Link-WAN-T9","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269cb24da96913130898,"Template FORTINET",10,"Default_DNS - Link-WAN-T9","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269cb24da96913130899,"Template FORTINET",10,"Google - internal1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269cb24da9691313089a,"Template FORTINET",10,"Google - internal1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269cb24da9691313089b,"Template FORTINET",10,"Google - internal1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269db24da9691313089c,"Template FORTINET",10,"Google - internal2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269db24da9691313089d,"Template FORTINET",10,"Google - internal2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269db24da9691313089e,"Template FORTINET",10,"Google - internal2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269db24da9691313089f,"Template FORTINET",10,"Google - lan3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269db24da969131308a0,"Template FORTINET",10,"Google - lan3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269db24da969131308a1,"Template FORTINET",10,"Google - lan3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269db24da969131308a2,"Template FORTINET",10,"Google - port1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269db24da969131308a3,"Template FORTINET",10,"Google - port1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269db24da969131308a4,"Template FORTINET",10,"Google - port1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269db24da969131308a5,"Template FORTINET",10,"Google - port3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269db24da969131308a6,"Template FORTINET",10,"Google - port3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269db24da969131308a7,"Template FORTINET",10,"Google - port3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269eb24da969131308a8,"Template FORTINET",10,"Google - port9","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269eb24da969131308a9,"Template FORTINET",10,"Google - port9","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269eb24da969131308aa,"Template FORTINET",10,"Google - port9","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269eb24da969131308ab,"Template FORTINET",10,"Google - wan1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269eb24da969131308ac,"Template FORTINET",10,"Google - wan1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269eb24da969131308ad,"Template FORTINET",10,"Google - wan1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269eb24da969131308ae,"Template FORTINET",10,"Google - wan","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269eb24da969131308af,"Template FORTINET",10,"Google - wan","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269eb24da969131308b0,"Template FORTINET",10,"Google - wan","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269eb24da969131308b1,"Template FORTINET",10,"IPSLA_VPN_MPLS_1 - SDWAN_MPLS_1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269eb24da969131308b2,"Template FORTINET",10,"IPSLA_VPN_MPLS_1 - SDWAN_MPLS_1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269eb24da969131308b3,"Template FORTINET",10,"IPSLA_VPN_MPLS_1 - SDWAN_MPLS_1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269eb24da969131308b4,"Template FORTINET",10,"IPSLA_VPN_MPLS_2 - SDWAN_MPLS_2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269eb24da969131308b5,"Template FORTINET",10,"IPSLA_VPN_MPLS_2 - SDWAN_MPLS_2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269eb24da969131308b6,"Template FORTINET",10,"IPSLA_VPN_MPLS_2 - SDWAN_MPLS_2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269eb24da969131308b7,"Template FORTINET",10,"IPSLA_VPN_WAN_1 - SDWAN_WAN_1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269fb24da969131308b8,"Template FORTINET",10,"IPSLA_VPN_WAN_1 - SDWAN_WAN_1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269fb24da969131308b9,"Template FORTINET",10,"IPSLA_VPN_WAN_1 - SDWAN_WAN_1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269fb24da969131308ba,"Template FORTINET",10,"IPSLA_VPN_WAN_2 - SDWAN_WAN_2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269fb24da969131308bb,"Template FORTINET",10,"IPSLA_VPN_WAN_2 - SDWAN_WAN_2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269fb24da969131308bc,"Template FORTINET",10,"IPSLA_VPN_WAN_2 - SDWAN_WAN_2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269fb24da969131308bd,"Template FORTINET",10,"Monitora PE WAN1 - port1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269fb24da969131308be,"Template FORTINET",10,"Monitora PE WAN1 - port1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269fb24da969131308bf,"Template FORTINET",10,"Monitora PE WAN1 - port1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269fb24da969131308c0,"Template FORTINET",10,"Monitora PE WAN1 - wan","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269fb24da969131308c1,"Template FORTINET",10,"Monitora PE WAN1 - wan","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269fb24da969131308c2,"Template FORTINET",10,"Monitora PE WAN1 - wan","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269fb24da969131308c3,"Template FORTINET",10,"Monitora PE WAN2 - port9","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269fb24da969131308c4,"Template FORTINET",10,"Monitora PE WAN2 - port9","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269fb24da969131308c5,"Template FORTINET",10,"Monitora PE WAN2 - port9","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269fb24da969131308c6,"Template FORTINET",10,"NTP - port1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca269fb24da969131308c7,"Template FORTINET",10,"NTP - port1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca269fb24da969131308c8,"Template FORTINET",10,"NTP - port1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca269fb24da969131308c9,"Template FORTINET",10,"NTP - port3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a0b24da969131308ca,"Template FORTINET",10,"NTP - port3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a0b24da969131308cb,"Template FORTINET",10,"NTP - port3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a0b24da969131308cc,"Template FORTINET",10,"NTP - port9","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a0b24da969131308cd,"Template FORTINET",10,"NTP - port9","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a0b24da969131308ce,"Template FORTINET",10,"NTP - port9","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a0b24da969131308cf,"Template FORTINET",10,"OpenDNS - internal1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a0b24da969131308d0,"Template FORTINET",10,"OpenDNS - internal1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a0b24da969131308d1,"Template FORTINET",10,"OpenDNS - internal1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a0b24da969131308d2,"Template FORTINET",10,"OpenDNS - internal2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a0b24da969131308d3,"Template FORTINET",10,"OpenDNS - internal2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a0b24da969131308d4,"Template FORTINET",10,"OpenDNS - internal2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a0b24da969131308d5,"Template FORTINET",10,"OpenDNS - wan1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a0b24da969131308d6,"Template FORTINET",10,"OpenDNS - wan1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a0b24da969131308d7,"Template FORTINET",10,"OpenDNS - wan1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a0b24da969131308d8,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a0b24da969131308d9,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a1b24da969131308da,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a1b24da969131308db,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a1b24da969131308dc,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a1b24da969131308dd,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a1b24da969131308de,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a1b24da969131308df,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a1b24da969131308e0,"Template FORTINET",10,"SLA_Matriz - vpn-003-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a1b24da969131308e1,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a1b24da969131308e2,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a1b24da969131308e3,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a1b24da969131308e4,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a1b24da969131308e5,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a1b24da969131308e6,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a1b24da969131308e7,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a1b24da969131308e8,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a1b24da969131308e9,"Template FORTINET",10,"SLA_Matriz - vpn-003-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a1b24da969131308ea,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a2b24da969131308eb,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a2b24da969131308ec,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a2b24da969131308ed,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a2b24da969131308ee,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a2b24da969131308ef,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a2b24da969131308f0,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a2b24da969131308f1,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a2b24da969131308f2,"Template FORTINET",10,"SLA_Matriz - vpn-004-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a2b24da969131308f3,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a2b24da969131308f4,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a2b24da969131308f5,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a2b24da969131308f6,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a2b24da969131308f7,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a2b24da969131308f8,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a2b24da969131308f9,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a3b24da969131308fa,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a3b24da969131308fb,"Template FORTINET",10,"SLA_Matriz - vpn-004-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a3b24da969131308fc,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a3b24da969131308fd,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a3b24da969131308fe,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a3b24da969131308ff,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a3b24da96913130900,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a3b24da96913130901,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a3b24da96913130902,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a4b24da96913130903,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a4b24da96913130904,"Template FORTINET",10,"SLA_Matriz - vpn-005-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a4b24da96913130905,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a4b24da96913130906,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a4b24da96913130907,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a4b24da96913130908,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a4b24da96913130909,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a4b24da9691313090a,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a4b24da9691313090b,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a4b24da9691313090c,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a4b24da9691313090d,"Template FORTINET",10,"SLA_Matriz - vpn-005-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a5b24da9691313090e,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a5b24da9691313090f,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a5b24da96913130910,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a5b24da96913130911,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a5b24da96913130912,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a5b24da96913130913,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a5b24da96913130914,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a5b24da96913130915,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a5b24da96913130916,"Template FORTINET",10,"SLA_Matriz - vpn-006-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a5b24da96913130917,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a5b24da96913130918,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a5b24da96913130919,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a5b24da9691313091a,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a5b24da9691313091b,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a5b24da9691313091c,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a5b24da9691313091d,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a5b24da9691313091e,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a5b24da9691313091f,"Template FORTINET",10,"SLA_Matriz - vpn-006-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da96913130920,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da96913130921,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a6b24da96913130922,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da96913130923,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da96913130924,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a6b24da96913130925,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da96913130926,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da96913130927,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a6b24da96913130928,"Template FORTINET",10,"SLA_Matriz - vpn-007-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da96913130929,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da9691313092a,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a6b24da9691313092b,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da9691313092c,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da9691313092d,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a6b24da9691313092e,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da9691313092f,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da96913130930,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a6b24da96913130931,"Template FORTINET",10,"SLA_Matriz - vpn-007-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a6b24da96913130932,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a6b24da96913130933,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a7b24da96913130934,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a7b24da96913130935,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a7b24da96913130936,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a7b24da96913130937,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a7b24da96913130938,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a7b24da96913130939,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a7b24da9691313093a,"Template FORTINET",10,"SLA_Matriz - vpn-010-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a7b24da9691313093b,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a7b24da9691313093c,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a7b24da9691313093d,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a7b24da9691313093e,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a7b24da9691313093f,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a7b24da96913130940,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a7b24da96913130941,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da96913130942,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a8b24da96913130943,"Template FORTINET",10,"SLA_Matriz - vpn-010-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a8b24da96913130944,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da96913130945,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a8b24da96913130946,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a8b24da96913130947,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da96913130948,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a8b24da96913130949,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a8b24da9691313094a,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da9691313094b,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a8b24da9691313094c,"Template FORTINET",10,"SLA_Matriz - vpn-011-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a8b24da9691313094d,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da9691313094e,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a8b24da9691313094f,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a8b24da96913130950,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da96913130951,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a8b24da96913130952,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a8b24da96913130953,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a8b24da96913130954,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a9b24da96913130955,"Template FORTINET",10,"SLA_Matriz - vpn-011-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a9b24da96913130956,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a9b24da96913130957,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a9b24da96913130958,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a9b24da96913130959,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a9b24da9691313095a,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a9b24da9691313095b,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a9b24da9691313095c,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a9b24da9691313095d,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a9b24da9691313095e,"Template FORTINET",10,"SLA_Matriz - vpn-013-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a9b24da9691313095f,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a9b24da96913130960,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26a9b24da96913130961,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26a9b24da96913130962,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26a9b24da96913130963,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aab24da96913130964,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aab24da96913130965,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aab24da96913130966,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aab24da96913130967,"Template FORTINET",10,"SLA_Matriz - vpn-013-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aab24da96913130968,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aab24da96913130969,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aab24da9691313096a,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aab24da9691313096b,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aab24da9691313096c,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aab24da9691313096d,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aab24da9691313096e,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aab24da9691313096f,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aab24da96913130970,"Template FORTINET",10,"SLA_Matriz - vpn-014-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aab24da96913130971,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26abb24da96913130972,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26abb24da96913130973,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26abb24da96913130974,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26abb24da96913130975,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26abb24da96913130976,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26abb24da96913130977,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26abb24da96913130978,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26abb24da96913130979,"Template FORTINET",10,"SLA_Matriz - vpn-014-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26abb24da9691313097a,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26abb24da9691313097b,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26abb24da9691313097c,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26abb24da9691313097d,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26abb24da9691313097e,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26abb24da9691313097f,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26abb24da96913130980,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26abb24da96913130981,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26abb24da96913130982,"Template FORTINET",10,"SLA_Matriz - vpn-016-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26acb24da96913130983,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26acb24da96913130984,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26acb24da96913130985,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26acb24da96913130986,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26acb24da96913130987,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26acb24da96913130988,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26acb24da96913130989,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26acb24da9691313098a,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26acb24da9691313098b,"Template FORTINET",10,"SLA_Matriz - vpn-016-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26acb24da9691313098c,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26acb24da9691313098d,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26acb24da9691313098e,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26acb24da9691313098f,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26acb24da96913130990,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26acb24da96913130991,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26adb24da96913130992,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26adb24da96913130993,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26adb24da96913130994,"Template FORTINET",10,"SLA_Matriz - vpn-017-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26adb24da96913130995,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26adb24da96913130996,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26adb24da96913130997,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26adb24da96913130998,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26adb24da96913130999,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26adb24da9691313099a,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26adb24da9691313099b,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26adb24da9691313099c,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26adb24da9691313099d,"Template FORTINET",10,"SLA_Matriz - vpn-017-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26adb24da9691313099e,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aeb24da9691313099f,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aeb24da969131309a0,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aeb24da969131309a1,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aeb24da969131309a2,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aeb24da969131309a3,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aeb24da969131309a4,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aeb24da969131309a5,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aeb24da969131309a6,"Template FORTINET",10,"SLA_Matriz - vpn-018-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aeb24da969131309a7,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aeb24da969131309a8,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aeb24da969131309a9,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aeb24da969131309aa,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aeb24da969131309ab,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aeb24da969131309ac,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aeb24da969131309ad,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26aeb24da969131309ae,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26aeb24da969131309af,"Template FORTINET",10,"SLA_Matriz - vpn-018-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26aeb24da969131309b0,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26afb24da969131309b1,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26afb24da969131309b2,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26afb24da969131309b3,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26afb24da969131309b4,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26afb24da969131309b5,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26afb24da969131309b6,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26afb24da969131309b7,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26afb24da969131309b8,"Template FORTINET",10,"SLA_Matriz - vpn-019-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26afb24da969131309b9,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26afb24da969131309ba,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26afb24da969131309bb,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26afb24da969131309bc,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26afb24da969131309bd,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26afb24da969131309be,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26afb24da969131309bf,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26afb24da969131309c0,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26afb24da969131309c1,"Template FORTINET",10,"SLA_Matriz - vpn-019-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b0b24da969131309c2,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b0b24da969131309c3,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b0b24da969131309c4,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b0b24da969131309c5,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b0b24da969131309c6,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b0b24da969131309c7,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b0b24da969131309c8,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b0b24da969131309c9,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b0b24da969131309ca,"Template FORTINET",10,"SLA_Matriz - vpn-023-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b0b24da969131309cb,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b0b24da969131309cc,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b0b24da969131309cd,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b0b24da969131309ce,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b0b24da969131309cf,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b0b24da969131309d0,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b0b24da969131309d1,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b0b24da969131309d2,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b1b24da969131309d3,"Template FORTINET",10,"SLA_Matriz - vpn-023-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b1b24da969131309d4,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b1b24da969131309d5,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b1b24da969131309d6,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b1b24da969131309d7,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b1b24da969131309d8,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b1b24da969131309d9,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b1b24da969131309da,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b1b24da969131309db,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b1b24da969131309dc,"Template FORTINET",10,"SLA_Matriz - vpn-025-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b1b24da969131309dd,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b1b24da969131309de,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b1b24da969131309df,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b1b24da969131309e0,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b1b24da969131309e1,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b1b24da969131309e2,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b1b24da969131309e3,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309e4,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b2b24da969131309e5,"Template FORTINET",10,"SLA_Matriz - vpn-025-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b2b24da969131309e6,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309e7,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b2b24da969131309e8,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b2b24da969131309e9,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309ea,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b2b24da969131309eb,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b2b24da969131309ec,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309ed,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b2b24da969131309ee,"Template FORTINET",10,"SLA_Matriz - vpn-027-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b2b24da969131309ef,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309f0,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b2b24da969131309f1,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b2b24da969131309f2,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309f3,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b2b24da969131309f4,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b2b24da969131309f5,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b2b24da969131309f6,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b3b24da969131309f7,"Template FORTINET",10,"SLA_Matriz - vpn-027-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b3b24da969131309f8,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b3b24da969131309f9,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b3b24da969131309fa,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b3b24da969131309fb,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b3b24da969131309fc,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b3b24da969131309fd,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b3b24da969131309fe,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b3b24da969131309ff,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b3b24da96913130a00,"Template FORTINET",10,"SLA_Matriz - vpn-028-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b3b24da96913130a01,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b3b24da96913130a02,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b3b24da96913130a03,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b3b24da96913130a04,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b3b24da96913130a05,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b3b24da96913130a06,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b3b24da96913130a07,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b3b24da96913130a08,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b4b24da96913130a09,"Template FORTINET",10,"SLA_Matriz - vpn-028-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b4b24da96913130a0a,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b4b24da96913130a0b,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b4b24da96913130a0c,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b4b24da96913130a0d,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b4b24da96913130a0e,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b4b24da96913130a0f,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b4b24da96913130a10,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b4b24da96913130a11,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b4b24da96913130a12,"Template FORTINET",10,"SLA_Matriz - vpn-029-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b4b24da96913130a13,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b4b24da96913130a14,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b4b24da96913130a15,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b4b24da96913130a16,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b4b24da96913130a17,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b4b24da96913130a18,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b4b24da96913130a19,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b5b24da96913130a1a,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b5b24da96913130a1b,"Template FORTINET",10,"SLA_Matriz - vpn-029-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b5b24da96913130a1c,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b5b24da96913130a1d,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b5b24da96913130a1e,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b5b24da96913130a1f,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b5b24da96913130a20,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b5b24da96913130a21,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b5b24da96913130a22,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b5b24da96913130a23,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b5b24da96913130a24,"Template FORTINET",10,"SLA_Matriz - vpn-030-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b5b24da96913130a25,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b5b24da96913130a26,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b5b24da96913130a27,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b5b24da96913130a28,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b5b24da96913130a29,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b6b24da96913130a2a,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b6b24da96913130a2b,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b6b24da96913130a2c,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b6b24da96913130a2d,"Template FORTINET",10,"SLA_Matriz - vpn-030-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b6b24da96913130a2e,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b6b24da96913130a2f,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b6b24da96913130a30,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b6b24da96913130a31,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b6b24da96913130a32,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b6b24da96913130a33,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b6b24da96913130a34,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b6b24da96913130a35,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b6b24da96913130a36,"Template FORTINET",10,"SLA_Matriz - vpn-031-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b6b24da96913130a37,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b6b24da96913130a38,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b6b24da96913130a39,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b7b24da96913130a3a,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b7b24da96913130a3b,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b7b24da96913130a3c,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b7b24da96913130a3d,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b7b24da96913130a3e,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b7b24da96913130a3f,"Template FORTINET",10,"SLA_Matriz - vpn-031-w2-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b7b24da96913130a40,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b7b24da96913130a41,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b7b24da96913130a42,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b7b24da96913130a43,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b7b24da96913130a44,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b7b24da96913130a45,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b7b24da96913130a46,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b7b24da96913130a47,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b7b24da96913130a48,"Template FORTINET",10,"SLA_Matriz - vpn-032-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b7b24da96913130a49,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b7b24da96913130a4a,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b8b24da96913130a4b,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b8b24da96913130a4c,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w2","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b8b24da96913130a4d,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w2","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b8b24da96913130a4e,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w2","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b8b24da96913130a4f,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b8b24da96913130a50,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b8b24da96913130a51,"Template FORTINET",10,"SLA_Matriz - vpn-033-w1-w3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b8b24da96913130a52,"Template FORTINET",10,"UOL - lan3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b8b24da96913130a53,"Template FORTINET",10,"UOL - lan3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b8b24da96913130a54,"Template FORTINET",10,"UOL - lan3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b8b24da96913130a55,"Template FORTINET",10,"UOL - port1","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b8b24da96913130a56,"Template FORTINET",10,"UOL - port1","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b8b24da96913130a57,"Template FORTINET",10,"UOL - port1","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b8b24da96913130a58,"Template FORTINET",10,"UOL - port3","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b8b24da96913130a59,"Template FORTINET",10,"UOL - port3","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b8b24da96913130a5a,"Template FORTINET",10,"UOL - port3","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b9b24da96913130a5b,"Template FORTINET",10,"UOL - port9","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b9b24da96913130a5c,"Template FORTINET",10,"UOL - port9","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b9b24da96913130a5d,"Template FORTINET",10,"UOL - port9","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b9b24da96913130a5e,"Template FORTINET",10,"UOL - wan","A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%",latency,4,">",100
+60ca26b9b24da96913130a5f,"Template FORTINET",10,"UOL - wan","A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%","packet_loss_percent",4,">",1
+60ca26b9b24da96913130a60,"Template FORTINET",10,"UOL - wan","O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%",jitter,4,">",100
+60ca26b9b24da96913130a61,"Template FORTINET",10,ha,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a62,"Template FORTINET",10,internal1,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a63,"Template FORTINET",10,internal2,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a64,"Template FORTINET",10,internal3,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a65,"Template FORTINET",10,internal5,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a66,"Template FORTINET",10,lan1,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a67,"Template FORTINET",10,lan3,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a68,"Template FORTINET",10,port1,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a69,"Template FORTINET",10,port2,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a6a,"Template FORTINET",10,port3,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26b9b24da96913130a6b,"Template FORTINET",10,port4,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a6c,"Template FORTINET",10,port5,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a6d,"Template FORTINET",10,port6,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a6e,"Template FORTINET",10,port7,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a6f,"Template FORTINET",10,port8,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a70,"Template FORTINET",10,port9,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a71,"Template FORTINET",10,wan1,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a72,"Template FORTINET",10,wan2,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60ca26bab24da96913130a73,"Template FORTINET",10,wan,"Link acusou erros por mais de 2 coletas","tx_errors",4,">",0
+60d09b8802be36588e6416b1,"Template FORTINET",10,GE1,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b2,"Template FORTINET",10,GE2,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b3,"Template FORTINET",10,GE3,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b4,"Template FORTINET",10,GE4,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b5,"Template FORTINET",10,GE5,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b6,"Template FORTINET",10,GE6,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b7,"Template FORTINET",10,SFP1,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE
+60d09b8802be36588e6416b8,"Template FORTINET",10,SFP2,"Link %thresholdIndex% entrou em status %thresholdValue%.",linkState,1,"!=",STABLE

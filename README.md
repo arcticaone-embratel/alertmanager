@@ -1,4 +1,4 @@
-# Alert Manager
+# Alert Manager-teste
 
 - **Authors**:		Simon Balz <simon@balz.me>, Mika Borner <mika.borner@gmail.com>, Datapunctum GmbH
 - **Description**:	Alert Manager App for Splunk with advanced reporting on alerts, workflows (modify assignee, status, severity) and auto-resolve features

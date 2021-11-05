@@ -1,0 +1,59 @@
+<form>
+  <label>Analise de Metricas</label>
+  <fieldset submitButton="false">
+    <input type="time" token="token_date">
+      <label>Data</label>
+      <default>
+        <earliest>-60m@m</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="text" token="token_solucao">
+      <label>Solucao</label>
+    </input>
+    <input type="dropdown" token="token_metric">
+      <label>Metrica</label>
+      <search>
+        <query>index=eventosnotaveis orig_host="$token_solucao$" | stats count by metric</query>
+        <earliest>-60m@m</earliest>
+        <latest>now</latest>
+      </search>
+      <fieldForLabel>metric</fieldForLabel>
+      <fieldForValue>metric</fieldForValue>
+    </input>
+    <input type="dropdown" token="token_index">
+      <label>Interface / Index</label>
+      <fieldForLabel>orig_index</fieldForLabel>
+      <fieldForValue>orig_index</fieldForValue>
+      <search>
+        <query>index=eventosnotaveis orig_host="$token_solucao$" metric = "$token_metric$"
+| stats count by orig_index</query>
+        <earliest>-60m@m</earliest>
+        <latest>now</latest>
+      </search>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>index=eventosnotaveis orig_host ="$token_solucao$"  metric="$token_metric$" orig_index="$token_index$"
+| table _time orig_host metric orig_index value
+| sort 0 - _time
+| rename orig_host as Solucao</query>
+          <earliest>$token_date.earliest$</earliest>
+          <latest>$token_date.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</form>

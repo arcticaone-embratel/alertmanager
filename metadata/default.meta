@@ -1,0 +1,469 @@
+[app/install/install_source_checksum]
+version = 8.0.6
+modtime = 1631915969.845307000
+
+[transforms/TemplateAlarme]
+version = 8.0.6
+modtime = 1623855892.499083000
+owner = fernando.germando
+
+[savedsearches/1%20Link%20down%20for%20linkId%20%24result.linkId%24]
+access = read : [ * ], write : [ * ]
+export = none
+owner = system.user
+version = 8.0.6
+modtime = 1624045865.741762000
+
+[savedsearches/1%20CPE%20%28Router%20ou%20edge%29%20DOWN%20for%20edge%20%24result.id%24]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = system.user
+version = 8.0.6
+modtime = 1624045865.744262000
+
+[workflow_actions/teste123]
+access = read : [ * ], write : [ * ]
+export = none
+owner = system.user
+version = 8.0.6
+modtime = 1624045865.878311000
+
+[savedsearches/JOB%20-%20VELOCLOUD%20-%20INTERFACE%20STATS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.0.6
+modtime = 1631905790.176119000
+
+[savedsearches/JOB%20-%20VELOCLOUD%20-%20STATUS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.0.6
+modtime = 1631905815.323279000
+
+[savedsearches/JOB%20-%20VELOCLOUD%20-%20LINK%20STATUS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.0.6
+modtime = 1631905810.050632000
+
+[savedsearches/JOB%20-%20CLEAR%20ALERTA%20NO%20ALERT%20MANAGER]
+version = 8.0.6
+modtime = 1631906300.810101000
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+
+[lookups/TemplateAlarme_backup_22062021.csv]
+version = 8.0.6
+modtime = 1624385896.956092000
+
+[savedsearches/JOB%20-%20FORTINET%20HEALTH%20CHECK%20-%20NORMALIZE]
+version = 8.0.6
+modtime = 1624386865.904694000
+access = read : [ * ], write : [ admin ]
+export = none
+owner = wagner.oliveira
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER]
+version = 8.0.6
+modtime = 1631498610.256774000
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+
+[views/incident_posture]
+version = 8.0.6
+modtime = 1629918321.160567000
+
+[macros/incident_history%281%29]
+version = 8.0.6
+modtime = 1624390509.895847000
+
+[macros/GetIncident%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1624458452.293985000
+
+[macros/all_alerts]
+version = 8.0.6
+modtime = 1627150889.384911000
+
+[lookups/incidents_backup_23062021.csv]
+version = 8.0.6
+modtime = 1624469194.257975000
+
+[macros/executeMacro%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1631901004.440216000
+
+[savedsearches/JOB%20-%20MPLS%20INTERFACES%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1629484297.713427000
+
+[transforms/Equipamentos]
+version = 8.0.6
+modtime = 1625330723.018269000
+
+[transforms/siebel]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1625447600.382487000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER%20INTERFACES%20-%20MPLS]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.0.6
+modtime = 1627442486.675096000
+
+[savedsearches/JOB%20-%20UPDATE%20EQUIPAMENTOS]
+version = 8.0.6
+modtime = 1625503689.861905000
+access = read : [ * ], write : [ admin ]
+export = system
+owner = wagner.oliveira
+
+[macros/incident_details%281%29]
+version = 8.0.6
+modtime = 1626834271.188606000
+
+[savedsearches/JOB%20-%20CLEAR%20ALERTA%20NO%20ALERT%20MANAGER%20MPLS%20INTERFACES]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1628789842.175102000
+
+[macros/all_alerts_novo]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1627404999.951739000
+
+[macros/all_alerts_single_trend_novo]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1627407327.971573000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER%20TESTE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.0.6
+modtime = 1627505594.826622000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER%20INTERFACES%20-%20FORTINET]
+version = 8.0.6
+modtime = 1627442441.814494000
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+
+[savedsearches/JOB%20-%20FORTINET%20RESOURCE%20USAGE%20-%20NORMALIZE]
+version = 8.0.6
+modtime = 1628774741.098484000
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+
+[savedsearches/JOB%20-%20FORTINET%20SYSTEM%20INTERFACE%20-%20NORMALIZE]
+version = 8.0.6
+modtime = 1628774802.152467000
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+
+[views/incidente_posture_new]
+version = 8.0.6
+modtime = 1629903651.090913000
+access = read : [ * ], write : [ admin, alert_manager ]
+export = none
+owner = wagner.oliveira
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER_BACKUP]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.0.6
+modtime = 1629412093.269182000
+
+[views/relatorio_de_alertas_abertos_nas_ultimas_24_horas]
+owner = fernando.germando
+version = 8.0.6
+modtime = 1629469237.032354000
+
+[views/entrega_bdi]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1629817811.873847000
+
+[views/incident_posture__em_desenvolvimento_clone]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = paulo.bianchi
+version = 8.0.6
+modtime = 1629900625.539243000
+
+[views/analise_de_metricas]
+owner = fernando.germando
+version = 8.0.6
+modtime = 1629912111.877010000
+
+[lookups/mockTTsGerencial.csv]
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1629989434.459164000
+
+[views/painel_gerencial_desenvolvimento]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1630518078.585939000
+
+[macros/tableSearchMacro]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1630003393.154684000
+
+[macros/tabelaGerencialSearch]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1630522099.930811000
+
+[lookups/relacao8_10.csv]
+owner = paulo.bianchi
+version = 8.0.6
+modtime = 1631557745.708028000
+
+[savedsearches/NORMALIZE%20-%20VELOCLOUD%20-%20V2]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1631890586.779074000
+
+[lookups/alertingFilter.csv]
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1631654711.340484000
+
+[lookups/templateAlarme_v2.csv]
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1631719721.052000000
+
+[lookups/severityMapping.csv]
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1631658482.525052000
+
+[savedsearches/OPEN%20-%20GENERAL%20-%20V2]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1631909371.398879000
+
+[lookups/alertManagerValidation.csv]
+version = 8.0.6
+modtime = 1631916841.017053000
+
+[savedsearches/CLOSE%20-%20GENERAL%20-%20V2]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.0.6
+modtime = 1631904646.379763000
+
+[lookups/incsAirton_14_15set.csv]
+owner = paulo.bianchi
+version = 8.0.6
+modtime = 1631794577.570478000
+
+[alert_actions/alert_manager]
+version = 8.0.6
+modtime = 1621510651.104192000
+
+[]
+access = read : [ * ], write : [ admin, alert_manager, user ]
+export = system
+owner = nobody
+version = 8.0.6
+modtime = 1603737017.103072000
+
+[transforms/alert_impact]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = system
+owner = nobody
+version = 8.0.6
+modtime = 1603738828.851132000
+
+[macros/AlertManagerParameters]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = wagner.oliveira
+version = 8.0.6
+modtime = 1621019076.845107000
+
+[collections/Equipamentos]
+owner = wagner.oliveira
+version = 8.0.6
+modtime = 1621022619.920523000
+
+[transforms/Equipamento]
+owner = wagner.oliveira
+version = 8.0.6
+modtime = 1621022625.666352000
+
+[macros/CollectEventosNotaveis%282%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1621026496.267147000
+
+[macros/CollectEventosNotaveis%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1621026705.558906000
+
+[macros/NormalizaFortinetMetrics]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = wagner.oliveira
+version = 8.0.6
+modtime = 1621346803.085775000
+
+[collections/TemplateAlarme]
+owner = fernando.germando
+version = 8.0.6
+modtime = 1621266810.519995000
+
+[macros/FormatarMensagemAlertManager%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1621285271.045832000
+
+[macros/OpenIncidentITSM%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1621348051.473575000
+
+[transforms/alert_priority]
+access = read : [ * ], write : [ admin, alert_manager ]
+export = system
+owner = nobody
+version = 8.0.6
+modtime = 1621382604.597300000
+
+[macros/LimparFortinet]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1621428961.945451000
+
+[macros/all_alerts_single_trend]
+version = 8.0.6
+modtime = 1621882856.271717000
+
+[savedsearches/JOB%20-%20FORTINET%20SYSTEM%20STATUS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1623513384.519649000
+
+[savedsearches/JOB%20-%20FORTINET%20SYSINFO%20HA%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.0.6
+modtime = 1623513366.659368000
+
+[lookups/incidents_backup_14062021.csv]
+version = 8.0.6
+modtime = 1623679319.501838000
+
+[inputs/script%3A%2F%2F.%2Fbin%2Falert_manager_migrate-v2.0.sh]
+version = 8.0.4
+modtime = 1603726912.906784000
+
+[inputs/script%3A%2F%2F.%5Cbin%5Calert_manager_migrate-v2.0.path]
+version = 8.0.4
+modtime = 1603726912.926908000
+
+[inputs/script%3A%2F%2F.%2Fbin%2Falert_manager_migrate-v2.1.sh]
+version = 8.0.4
+modtime = 1603726914.170338000
+
+[inputs/script%3A%2F%2F.%5Cbin%5Calert_manager_migrate-v2.1.path]
+version = 8.0.4
+modtime = 1603726914.189348000
+
+[inputs/script%3A%2F%2F.%2Fbin%2Falert_manager_migrate-v3.0.sh]
+version = 8.0.4
+modtime = 1603726916.216795000
+
+[inputs/script%3A%2F%2F.%5Cbin%5Calert_manager_migrate-v3.0.path]
+version = 8.0.4
+modtime = 1603726916.241383000
+
+[views]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = none
+owner = nobody
+
+[datamodels]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = system
+owner = nobody
+
+[models]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = system
+owner = nobody
+
+[transforms]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = system
+owner = nobody
+
+[nav]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = none
+owner = nobody
+
+[collections]
+access = read : [ admin, alert_manager, alert_manager_user ], write : [ admin, alert_manager ]
+export = system
+owner = nobody

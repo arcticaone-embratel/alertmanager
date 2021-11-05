@@ -1,0 +1,24 @@
+cod,txt
+0,
+1,Cancelamento Indevido
+2,Em atendimento
+3,Equipamento PSYS
+4,Falta de energia
+5,Gerenciamento
+6,Histórico de desligamento
+7,Link 4G Failed
+8,Link 4G inviavel
+9,Link 4G sinal ruim
+10,Links 4G e Claro Failed
+11,Links 4G e Cliente Failed
+12,Links Claro Failed
+13,Links Cliente Failed
+14,Links Claro e Cliente Failed
+15,Loja desativada
+16,Loja desligada
+17,Loja em reforma
+18,Loja normalizada
+19,Loja sem backup
+20,Pendência Cliente
+21,Pendência Instalação Psys
+22,Sinistro ou Vandalismo

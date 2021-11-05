@@ -1,0 +1,5 @@
+occurences,metric,threshold,operator,severity,message
+3,jitter,100,>,4,O Jitter da interface <interface> excedeu o valor de <threshold>
+3,latency,100,>,4,A Latência da interface <interface> excedeu o valor de <threshold>
+1,linkState,STABLE,!=,1,Link <interface> entrou em status <value>
+3,packet_loss_percent,1,>,4,A perda de pacotes da interface <interface> excedeu o valor de <threshold>%

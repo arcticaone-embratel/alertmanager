@@ -1,0 +1,2 @@
+occurences,metric,threshold,operator,severity
+3,packet_loss_percent,1,>,4

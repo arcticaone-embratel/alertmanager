@@ -1,0 +1,336 @@
+<form stylesheet="incident_posture.css" script="incident_posture_novo.js, /incidente_posture_custom/js/clearTokens.js, /incidente_posture_custom/js/fancyMultivalue.js" theme="light" hideFilters="true">
+  <init>
+    <set token="alert">*</set>
+    <set token="category">*</set>
+    <set token="subcategory">*</set>
+    <set token="tags">*</set>
+    <set token="urgency">*</set>
+    <set token="priority">*</set>
+    <set token="group_id">*</set>
+    <set token="makro_filter">| `all_alerts_novo()`</set>
+  </init>
+  <description>Número de incidentes de hoje, em comparação com ontem</description>
+  <label>Incident Posture - [EM HOMOLOGAÇÃO]</label>
+  <search id="base_single_search">
+    <!--<query>`all_alerts_single_trend` | append [makeresults] | timechart span=1d count by priority | fillnull value=0 informational, low, medium, high, critical</query>-->
+    <query>| `all_alerts_single_trend_novo` | eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$")) 
+| eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$")) 
+| fillnull value=0 relative_earliest 
+| fillnull value=9999999999999999 relative_latest 
+| where _time &gt;= relative_earliest AND _time &lt;= relative_latest |  where status = "new" | append [makeresults] | timechart span=1d count by impact | fillnull value=0 informational, low, medium, high, critical, performance</query>
+    <earliest>$global_time.earliest$</earliest>
+    <latest>$global_time.latest$</latest>
+  </search>
+  <!--| search title="$title$" owner="$owner$" alert="$alert$" category="$category$" subcategory="$subcategory$" incident_id="$incident_id$" group_id="$group_id$" $tags$ $impact$ $urgency$ $priority$ $status$ -->
+  <!--<row>
+    <panel>
+      <title>Alert Results</title>
+      <table id="alert_details" depends="$drilldown_incident_id$">
+        <search>
+          <query>| loadincidentresults incident_id=$drilldown_incident_id$</query>
+          <earliest>$global_time.earliest$</earliest>
+          <latest>$global_time.latest$</latest>
+        </search>
+        <option name="count">20</option>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+  </row>-->
+  <fieldset autoRun="true" submitButton="true">
+    <input id="customInputTimepicker" type="time" searchWhenChanged="true" token="global_time">
+      <label>Timerange:</label>
+      <default>
+        <earliest>-7d</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input id="customInputOwner" type="dropdown" token="owner" searchWhenChanged="false">
+      <label>Owner:</label>
+      <search>
+        <query>|inputlookup incidents |dedup owner |table owner |sort owner|eval owner_label = if(owner == "unassigned", "Não Designado", 'owner')</query>
+        <earliest>-1m</earliest>
+        <latest>now</latest>
+      </search>
+      <fieldForLabel>owner_label</fieldForLabel>
+      <fieldForValue>owner</fieldForValue>
+      <choice value="*">Todos</choice>
+      <default>*</default>
+    </input>
+    <input id="customInputStatus" type="multiselect" token="status" searchWhenChanged="false">
+      <label>Status:</label>
+      <search>
+        <query>| inputlookup alert_status | eval filter_value="status=\""+status+"\""</query>
+      </search>
+      <fieldForLabel>status_description</fieldForLabel>
+      <fieldForValue>filter_value</fieldForValue>
+      <delimiter> OR </delimiter>
+      <choice value="status=&quot;*&quot;">Todos</choice>
+      <choice value="status!=&quot;*resolved&quot; status!=&quot;suppressed&quot; status!=&quot;closed*&quot; status!=&quot;cancelled*&quot;">Todos abertos</choice>
+      <!--<choice value="status=&quot;*resolved&quot;">All resolved</choice>-->
+      <!--<default>"status!=""*resolved"" status!=""suppressed"" status!=""closed*"" status!=""cancelled*"""</default>-->
+      <default>status!="*resolved" status!="suppressed" status!="closed*" status!="cancelled*"</default>
+      <initialValue>status!="*resolved" status!="suppressed" status!="closed*" status!="cancelled*"</initialValue>
+    </input>
+    <input id="customInputIncident" type="text" token="s_incident_id">
+      <label>Incident ID:</label>
+      <default></default>
+      <change>
+        <condition value="">
+          <set token="incident_id">*</set>
+        </condition>
+        <condition value="*">
+          <set token="incident_id">$value$</set>
+        </condition>
+      </change>
+    </input>
+    <input id="customInputTitle" type="text" token="s_title">
+      <label>Title:</label>
+      <default></default>
+      <change>
+        <condition value="">
+          <set token="title">*</set>
+        </condition>
+        <condition value="*">
+          <set token="title">*$value$*</set>
+        </condition>
+      </change>
+    </input>
+    <input id="customInputImpact" type="multiselect" token="impact" searchWhenChanged="false">
+      <label>Impacto:</label>
+      <choice value="*">Todos</choice>
+      <initialValue>*</initialValue>
+      <default>*</default>
+      <search>
+        <query>|inputlookup alert_priority | dedup impact
+| eval Impacto = case(impact = "performance", "", impact = "low", "Baixo", impact = "medium", "Médio", impact = "high" , "Alto", true(), "N/A")
+
+| stats count by Impacto impact</query>
+        <earliest>-1m</earliest>
+        <latest>now</latest>
+      </search>
+      <fieldForLabel>Impacto</fieldForLabel>
+      <fieldForValue>impact</fieldForValue>
+      <valueSuffix>"</valueSuffix>
+      <delimiter> OR </delimiter>
+      <valuePrefix>impact="</valuePrefix>
+    </input>
+    <input id="customInputEmpresa" type="dropdown" token="empresa">
+      <label>Empresa</label>
+      <fieldForLabel>Cliente</fieldForLabel>
+      <fieldForValue>Cliente</fieldForValue>
+      <search>
+        <query>|inputlookup incidents |dedup Cliente |table Cliente | sort Cliente</query>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </search>
+      <choice value="*">Todas</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    <input id="customInputEstado" type="dropdown" token="estado">
+      <label>Estado</label>
+      <fieldForLabel>Estado</fieldForLabel>
+      <fieldForValue>Estado</fieldForValue>
+      <search>
+        <query>|inputlookup incidents |dedup Estado |table Estado | sort Estado</query>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </search>
+      <choice value="*">Todos</choice>
+      <default>*</default>
+      <initialValue>*</initialValue>
+    </input>
+    <input id="customInputFlagNormalizado" type="radio" token="flag_normalizado">
+      <label>Exibir histórico dos normalizados</label>
+      <choice value="Sim">Sim</choice>
+      <choice value="Não">Não</choice>
+      <default>Não</default>
+      <initialValue>Não</initialValue>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <single id="sv_info">
+        <search base="base_single_search">
+          <query>fields _time, performance
+| stats sum(performance) as performance</query>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="drilldown">none</option>
+        <option name="field">count</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0x5378AD","0x5378AD"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">Performance</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+      </single>
+      <single id="sv_low">
+        <search base="base_single_search">
+          <query>fields _time, low
+| stats sum(low) as low</query>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="drilldown">none</option>
+        <option name="field">count</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0xf8be34","0xf8be34"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">Baixo</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+      </single>
+      <single id="sv_medium">
+        <search base="base_single_search">
+          <query>fields _time, medium
+| stats sum(medium) as medium</query>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="drilldown">none</option>
+        <option name="field">count</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0xf1813f","0xf1813f"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">Médio</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+      </single>
+      <single id="sv_high">
+        <search base="base_single_search">
+          <query>fields _time, high
+| stats sum(high) as high</query>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="drilldown">none</option>
+        <option name="field">count</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0xdc4e41","0xdc4e41"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">Alto</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">1</option>
+      </single>
+      <single id="sv_critical">
+        <search>
+          <query>| `all_alerts_single_trend_novo` 
+| eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$")) 
+| eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$")) 
+| fillnull value=0 relative_earliest 
+| fillnull value=9999999999999999 relative_latest 
+| where _time &gt;= relative_earliest AND _time &lt;= relative_latest 
+| eval FiltroNormalizado = if("$flag_normalizado$" = "Sim", 0,  relative_time(now(), "-1d"))
+| where (_time &gt;= FiltroNormalizado AND status = "closed") OR (status != "closed")
+| sort 0 - _time 
+| where status = "closed" OR status = "auto_resolved" OR status = "resolved" 
+| append 
+    [ makeresults] 
+| timechart span=1d count by impact 
+| fillnull value=0 informational, low, medium, high, critical, performance
+| eval total = informational + low + medium + high + critical + performance 
+| fields _time, total 
+| stats sum(total) as total</query>
+          <earliest>$global_time.earliest$</earliest>
+          <latest>$global_time.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="drilldown">none</option>
+        <option name="field">count</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0x53a051","0x53a051"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="trendInterval">auto</option>
+        <option name="underLabel">Normalizado</option>
+        <option name="useColors">1</option>
+        <option name="useThousandSeparators">0</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Alertas recentes</title>
+      <table id="incident_overview">
+        <search id="recent_alerts">
+          <query>$makro_filter$ 
+          | eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$"))
+| eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$"))
+| fillnull value=0 relative_earliest
+| fillnull value=9999999999999999 relative_latest
+| where _time &gt;= relative_earliest AND _time &lt;= relative_latest
+| eval FiltroNormalizado = if("$flag_normalizado$" = "Sim", 0,  relative_time(relative_earliest, "-1d"))
+| where (_time &gt;= FiltroNormalizado)
+
+| sort 0 - _time
+| fillnull value="unknown" owner, status, status_description, impact, urgency, priority, group_id 
+| fillnull Estado value="N/A"
+| search title="$title$" owner="$owner$" alert="$alert$" category="$category$" subcategory="$subcategory$" incident_id="$incident_id$" Estado="$estado$" group_id="$group_id$" $tags$ $impact$ $urgency$ $priority$ $status$ Cliente="$empresa$"
+| eval dobulkedit=incident_id, doedit=" ", doquickassign=" ", doaction=" ", Endereco = Estado . " - " . Cidade , Localidade = mvindex(split(Localidade, "|"),0) 
+| table dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, title, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id, Cliente, Localidade, Endereco, Solucao, TipoServico, impact ,AbertoTT, _time, alert_close_time, owner, status, status_description,Impacto
+| eval Impacto = case(impact = "performance", "Performance", impact = "low", "Baixo", impact = "medium", "Médio", impact = "high" , "Alto", true(), "N/A")
+| rename AbertoTT as "Ticket", alert_close_time as "Fim", Cliente as Empresa, title as Alerta, _time as Inicio
+| eval Fim = if(Fim = "0", "", substr(Fim,0,10))
+
+| convert ctime(Inicio) timeformat="%Y-%m-%d %H:%M:%S"
+
+| convert ctime(Fim) timeformat="%Y-%m-%d %H:%M:%S"</query>
+          <earliest>$global_time.earliest$</earliest>
+          <latest>$global_time.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">row</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="wrap">true</option>
+        <format type="color" field="priority">
+          <colorPalette type="map">{"informational":#5378AD,"low":#98BF3B,"medium":#F0BE1B,"high":#FF8800,"critical":#D25B3B}</colorPalette>
+        </format>
+        <format type="color" field="Impacto">
+          <colorPalette type="map">{"Performance":#5378AD,"Baixo":#F8BE34,"Médio":#F1813F,"Alto":#DC4E41}</colorPalette>
+        </format>
+        <format type="color" field="status_description">
+          <colorPalette type="map">{"Normalizado":#53A051,"Alto":#DC4E41,"Médio":#F1813F,"Baixo":#F8BE34,"Performance":#006D9C,"Cancelado":#708794,"Novo":#B0E0E6,"Associado":#F5F5F5}</colorPalette>
+        </format>
+        <drilldown>
+          <set token="drilldown_incident_id">$row.incident_id$</set>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+</form>

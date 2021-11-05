@@ -1,0 +1,26 @@
+<dashboard script="painel_gerencial/js/table.js" theme="light">
+  <label>rel gerencial</label>
+  <!--<row>
+    <panel>
+      <table>
+        <search>
+          <query>| inputlookup mockTTsGerencial.csv</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+  </row>
+  -->
+  <row>
+    <panel>
+      <html>
+        <div id="generalContainer">
+          <div id="labelContainer"/>
+          <div id="tableContainer"/>
+        </div>
+      </html>
+    </panel>
+  </row>
+</dashboard>

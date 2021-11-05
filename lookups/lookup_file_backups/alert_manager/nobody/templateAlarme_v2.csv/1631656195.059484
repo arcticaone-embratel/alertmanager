@@ -1,0 +1,4 @@
+occurences,metric,threshold,operator,severity
+3,packet_loss_percent,1,>,4
+3,jitter,100,>,4
+3,latency,100,>,4

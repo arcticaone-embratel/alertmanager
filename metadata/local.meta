@@ -1,0 +1,424 @@
+[app/install]
+version = 8.2.2.1
+modtime = 1634593038.212540000
+
+[app/package]
+version = 8.2.2.1
+modtime = 1634479878.325717000
+
+[commands/abrettsiebel]
+version = 8.2.2.1
+modtime = 1634479878.326598000
+
+[lookups/TemplateAlarme_backup_22062021.csv]
+version = 8.2.2.1
+modtime = 1634593038.214106000
+
+[lookups/alertManagerValidation.csv]
+version = 8.2.2.1
+modtime = 1634593038.215388000
+
+[lookups/alertingFilter.csv]
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.216702000
+
+[lookups/incidents_backup_23062021.csv]
+version = 8.2.2.1
+modtime = 1634593038.237202000
+
+[lookups/incsAirton_14_15set.csv]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634593038.238460000
+
+[lookups/mockTTsGerencial.csv]
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.469688000
+
+[lookups/relacao8_10.csv]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634593038.470973000
+
+[lookups/severityMapping.csv]
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.472070000
+
+[lookups/templateAlarme_v2.csv]
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.473164000
+
+[macros/GetIncident%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.474957000
+
+[macros/TotIncsOpenByCli]
+access = read : [ * ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634593038.477243000
+
+[macros/all_alerts]
+version = 8.2.2.1
+modtime = 1634479878.587340000
+
+[macros/all_alerts_novo]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.479473000
+
+[macros/all_alerts_single_trend_novo]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.481690000
+
+[macros/executeMacro%281%29]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.483869000
+
+[macros/incident_details%281%29]
+version = 8.2.2.1
+modtime = 1634927208.245180000
+
+[macros/incident_history%281%29]
+version = 8.2.2.1
+modtime = 1634479878.592982000
+
+[macros/tabelaGerencialSearch]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.485905000
+
+[macros/tabelaGerencialSearch_bkp]
+access = read : [ * ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634593038.488090000
+
+[macros/tableSearchMacro]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.490274000
+
+[props/siebel_retorno]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634593038.492104000
+
+[savedsearches/1%20CPE%20%28Router%20ou%20edge%29%20DOWN%20for%20edge%20%24result.id%24]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = system.user
+version = 8.2.2.1
+modtime = 1634593038.494465000
+
+[savedsearches/1%20Link%20down%20for%20linkId%20%24result.linkId%24]
+access = read : [ * ], write : [ * ]
+export = none
+owner = system.user
+version = 8.2.2.1
+modtime = 1634593038.495480000
+
+[savedsearches/CLOSE%20-%20GENERAL%20-%20V2]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.498791000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER]
+version = 8.2.2.1
+modtime = 1634479878.603170000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER%20INTERFACES%20-%20FORTINET]
+version = 8.2.2.1
+modtime = 1634479878.604431000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER%20INTERFACES%20-%20MPLS]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.502966000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER%20TESTE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634741801.320110000
+
+[savedsearches/JOB%20-%20ABERTURA%20ALERTA%20NO%20ALERT%20MANAGER_BACKUP]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.513063000
+
+[savedsearches/JOB%20-%20CLEAR%20ALERTA%20NO%20ALERT%20MANAGER]
+version = 8.2.2.1
+modtime = 1634479878.614107000
+
+[savedsearches/JOB%20-%20CLEAR%20ALERTA%20NO%20ALERT%20MANAGER%20MPLS%20INTERFACES]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.519161000
+
+[savedsearches/JOB%20-%20FORTINET%20HEALTH%20CHECK%20-%20NORMALIZE]
+version = 8.2.2.1
+modtime = 1634479878.617543000
+
+[savedsearches/JOB%20-%20FORTINET%20RESOURCE%20USAGE%20-%20NORMALIZE]
+version = 8.2.2.1
+modtime = 1634479878.619272000
+
+[savedsearches/JOB%20-%20FORTINET%20SYSTEM%20INTERFACE%20-%20NORMALIZE]
+version = 8.2.2.1
+modtime = 1634479878.621037000
+
+[savedsearches/JOB%20-%20MPLS%20INTERFACES%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.523421000
+
+[savedsearches/JOB%20-%20UPDATE%20EQUIPAMENTOS]
+version = 8.2.2.1
+modtime = 1634593038.525349000
+
+[savedsearches/JOB%20-%20VELOCLOUD%20-%20INTERFACE%20STATS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.528598000
+
+[savedsearches/JOB%20-%20VELOCLOUD%20-%20LINK%20STATUS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.534066000
+
+[savedsearches/JOB%20-%20VELOCLOUD%20-%20STATUS%20-%20NORMALIZE]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.539489000
+
+[savedsearches/NORMALIZE%20-%20VELOCLOUD%20-%20V2]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.544872000
+
+[savedsearches/OPEN%20-%20GENERAL%20-%20V2]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.550317000
+
+[savedsearches/OPEN%20-%20GENERAL%20-%20V3]
+access = read : [ * ], write : [ admin, alert_manager, user ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.556439000
+
+[savedsearches/job-%20bdi_update_lookup]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = daniel.armendani
+version = 8.2.2.1
+modtime = 1634593038.562361000
+
+[savedsearches/job-bdi_siebel_update_lookup]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = daniel.armendani
+version = 8.2.2.1
+modtime = 1634818595.203292000
+
+[transforms/Equipamentos]
+version = 8.2.2.1
+modtime = 1634479878.653851000
+
+[transforms/TemplateAlarme]
+version = 8.2.2.1
+modtime = 1634479878.655124000
+
+[transforms/siebel]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.569993000
+
+[views/analise_de_metricas]
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.571703000
+
+[views/entrega_bdi]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.572899000
+
+[views/incident_posture]
+version = 8.2.2.1
+modtime = 1635277926.293073000
+
+[views/incident_posture__em_desenvolvimento_clone]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634593038.574734000
+
+[views/incident_teste]
+owner = rmerces
+version = 8.2.2.1
+modtime = 1634593038.576719000
+
+[views/incidente_posture_new]
+version = 8.2.2.1
+modtime = 1634479878.666888000
+
+[views/painel_gerencial_desenvolvimento]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1634593038.577992000
+
+[views/relatorio_de_alertas_abertos_nas_ultimas_24_horas]
+owner = fernando.germando
+version = 8.2.2.1
+modtime = 1634593038.579158000
+
+[workflow_actions/teste123]
+access = read : [ * ], write : [ * ]
+export = none
+owner = system.user
+version = 8.2.2.1
+modtime = 1634593038.580164000
+
+[app/install/install_source_local_checksum]
+version = 8.2.2.1
+modtime = 1634593038.581391000
+
+[app/install/install_source_checksum]
+version = 8.2.2.1
+modtime = 1634593037.050214000
+
+[]
+version = 8.2.2.1
+modtime = 1634581689.943985000
+
+[props/siebel_ret]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634581689.947650000
+
+[lookups/bdi_siebel.csv]
+version = 8.2.2.1
+modtime = 1636095012.269675000
+
+[props/tsv_Siebel/FIELDALIAS-mapeamento_campos_siebel]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634673687.857243000
+
+[lookups/bdi.csv]
+version = 8.2.2.1
+modtime = 1636008602.567342000
+
+[props/siebel]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634821454.804653000
+
+[indexes/bde_siebel]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634821477.757480000
+
+[indexes/bdi_siebel]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634821501.812220000
+
+[props/tsv_Siebel]
+version = 8.2.2.1
+modtime = 1634912465.186257000
+
+[savedsearches/coleta%20siebel]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1634912250.899480000
+
+[props/alert_manager]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1635081832.750982000
+
+[indexes/alert_manager]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1635081851.459656000
+
+[props/test]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1635084127.324112000
+
+[macros/environment]
+access = read : [ * ], write : [ admin, alert_manager ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1635174392.355012000
+
+[savedsearches/expurgo_encerrados]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1635174845.952563000
+
+[lookups/novo_combo.csv]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1635187229.187016000
