@@ -93,7 +93,7 @@ modtime = 1634593038.483869000
 
 [macros/incident_details%281%29]
 version = 8.2.2.1
-modtime = 1634927208.245180000
+modtime = 1636142237.585970000
 
 [macros/incident_history%281%29]
 version = 8.2.2.1
@@ -422,3 +422,13 @@ modtime = 1635174845.952563000
 owner = paulo.bianchi
 version = 8.2.2.1
 modtime = 1635187229.187016000
+
+[lookups/eqpts2021nov05.csv]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1636132885.717350000
+
+[lookups/alertstatus.csv]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1636135865.251940000

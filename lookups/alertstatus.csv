@@ -1,0 +1,5 @@
+builtin,hidden,internal_only,status,status_description
+1,0,0,assigned,Associado
+1,0,0,closed,Normalizado
+1,0,0,new,Novo
+1,0,0,cancelled,Cancelado
