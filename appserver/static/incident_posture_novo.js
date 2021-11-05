@@ -896,12 +896,12 @@ require([
         '        <div class="controls"><input type="text" name="numero_tt_siebel" id="numero_tt_siebel" class=""></input></div>' +
         '      </div>' +
 '          <div class="control-group shared-controls-controlgroup">' +
-'            <label for="urgency" class="control-label">Urgency:</label>' +
+'            <label for="urgency" class="control-label">Urgencia:</label>' +
 '            <div class="controls"><select name="urgency" id="urgency" disabled="disabled"></select></div>' +
 '          </div>' +
 '          <p class="control-heading">Incident Workflow</p>'+
 '          <div class="control-group shared-controls-controlgroup">' +
-'            <label for="owner" class="control-label">Owner:</label>' +
+'            <label for="owner" class="control-label">Dono:</label>' +
 '            <div class="controls"><select name="owner" id="owner" disabled="disabled"></select></div>' +
 '          </div>' +
 '          <div class="control-group shared-controls-controlgroup">' +
@@ -913,13 +913,13 @@ require([
 '            <div class="controls"><input type="hidden"" name="incident_group" id="incident_group" disabled="disabled"></select></div>' +
 '          </div>' +
 '          <div class="control-group shared-controls-controlgroup">' +
-'            <label for="comment" class="control-label">Comment:</label>' +
+'            <label for="comment" class="control-label">Comentario:</label>' +
 '            <div class="controls"><textarea type="text" name="comment" id="comment" class=""></textarea></div>' +
 '          </div>' +
 '        </div>' +
 '      </div>' +
 '      <div class="modal-footer">' +
-'        <button type="button" class="btn cancel modal-btn-cancel pull-left" data-dismiss="modal">Cancel</button>' +
+'        <button type="button" class="btn cancel modal-btn-cancel pull-left" data-dismiss="modal">Cancelar</button>' +
 '        <button type="button" class="btn btn-primary" id="modal-save" disabled>Save</button>' +
 '      </div>' +
 '    </div>' +
@@ -960,10 +960,15 @@ require([
                 var all_urgencies = [ "low" ,"medium", "high" ]
             }
             $.each(all_urgencies, function(key, val) {
+                var port = "";
+                if (val=="low") port = "baixo";
+                if (val=="medium") port = "medio";
+                if (val=="high") port = "alto";
+                
                 if (val == urgency) {
-                    $('#urgency').append( $('<option></option>').attr("selected", "selected").val(val).html(val) )
+                    $('#urgency').append( $('<option></option>').attr("selected", "selected").val(val).html(port) )
                 } else {
-                    $('#urgency').append( $('<option></option>').val(val).html(val) )
+                    $('#urgency').append( $('<option></option>').val(val).html(port) )
                 }
                 $("#urgency").prop("disabled", false);
             }); //
