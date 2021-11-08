@@ -350,7 +350,7 @@ modtime = 1634581689.947650000
 
 [lookups/bdi_siebel.csv]
 version = 8.2.2.1
-modtime = 1636095012.269675000
+modtime = 1636354207.726447000
 
 [props/tsv_Siebel/FIELDALIAS-mapeamento_campos_siebel]
 access = read : [ * ], write : [ admin ]
@@ -361,7 +361,7 @@ modtime = 1634673687.857243000
 
 [lookups/bdi.csv]
 version = 8.2.2.1
-modtime = 1636008602.567342000
+modtime = 1636354202.632100000
 
 [props/siebel]
 owner = paulo.bianchi

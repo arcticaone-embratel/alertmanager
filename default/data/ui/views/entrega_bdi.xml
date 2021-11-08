@@ -1,5 +1,5 @@
 <form script="consulta_bdi/js/submitButton.js">
-  <label>Entrega BDI [DESENVOLVIMENTO]</label>
+  <label>Entrega BDI [teste]</label>
   <fieldset submitButton="false" autoRun="false"></fieldset>
   <row id="headerRow">
     <panel id="headerPanel">
