@@ -19,6 +19,7 @@ require([
 
     var mainTable = new TableView({
         id: "mainTable",
+        drilldown: "none",
         managerid: "tableSearch",
         pageSize: "10",
         wrap: true,
@@ -61,14 +62,36 @@ var colMapping = {
     'BD': 'rgb(208,206,206)'//22
 };
 
+var conteudo = ''; var cliente = '';
+
 var TrocaCor = TableView.BaseCellRenderer.extend({ 
     canRender: function(cellData) {
         //console.log(cellData);                
         return true;//cellData.field === item;
     },
     render: function($td, cellData) {
+
+        if (cellData.field=='Cliente')        
+            cliente = cellData.value;
         //alert("cellData: " + cellData.value);
-        $td.css({ 'background-color': colMapping[cellData.field], 'color': 'black' }).html(cellData.value);
+
+        conteudo = cellData.value;
+        if (conteudo=='icone')
+        {
+            conteudo = `<a href="teste.html" onclick="alert('${cliente}');">icone</a>`;
+
+            if (cellData.field=='SAG')
+                conteudo = `<a href="teste.html" onclick="alert('${cliente}');">desativado</a>`;
+            if (cellData.field=='BD')
+                conteudo = `<a href="teste.html" onclick="alert('${cliente}');">desativado</a>`;
+//incident_posture?form.global_time.earliest=-7d&form.global_time.latest=now&form.owner=*&form.status=status!%3D%22*resolved%22%20status!%3D%22suppressed%22%20status!%3D%22closed*%22%20status!%3D%22cancelled*%22&form.s_incident_id=&form.s_title=&form.impact=Performance&form.empresa=ICATU%20SEGUROS%20S.A.&form.estado=*&form.flag_normalizado=N%C3%A3o&hideFilters=false
+            if (cellData.field=='BDI')//${cliente}
+                conteudo = `<a href="#" onclick="window.open('entrega_bdi?form.cliente=${cliente}&form.solucao=');">BDI</a>`;
+
+            
+        }
+            
+        $td.css({ 'background-color': colMapping[cellData.field], 'color': 'black' }).html(conteudo);
     }
 });
 mainTable.addCellRenderer(new TrocaCor());

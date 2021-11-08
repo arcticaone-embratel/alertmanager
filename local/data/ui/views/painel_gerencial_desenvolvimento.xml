@@ -1,5 +1,5 @@
 <dashboard script="painel_gerencial/js/table.js" theme="light">
-  <label>rel gerencial</label>
+  <label>Painel Gerencial</label>
   <!--<row>
     <panel>
       <table>
@@ -16,6 +16,16 @@
   <row>
     <panel>
       <html>
+        <table id="idTable" width="100%">
+          <tr style="background-color: black; color: white; ">
+            <th style="width: 10%">PARQUE</th>
+            <th style="width: 10%">STATS</th>
+            <th style="width: 15%">PERFORM</th>
+            <th style="width: 15%">ALERT</th>
+            <th style="width: 20%">TTS</th>
+            <th style="width: 16%">DETALHES</th>
+          </tr>
+        </table>
         <div id="generalContainer">
           <div id="labelContainer"/>
           <div id="tableContainer"/>
