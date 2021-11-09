@@ -1,4 +1,4 @@
-<form stylesheet="incident_posture.css" script="incident_posture_novo.js, /incidente_posture_custom/js/clearTokens.js, /incidente_posture_custom/js/fancyMultivalue.js" theme="light" hideFilters="true">
+<form stylesheet="incident_posture.css" script="incident_posture_novo.js, /incidente_posture_custom/js/clearTokens.js, /incidente_posture_custom/js/fancyMultivalue.js, /incidente_posture_custom/js/setDefaultTokens.js" theme="light" hideFilters="true">
   <init>
     <set token="alert">*</set>
     <set token="category">*</set>
@@ -313,7 +313,7 @@
   </row>
   <row>
     <panel>
-      <title>Alertas recentes</title>
+      <title>Alertas recentes $urlSearch$</title>
       <table id="incident_overview">
         <search id="recent_alerts">
           <query>$makro_filter$ 
@@ -330,14 +330,17 @@
 | fillnull Estado value="N/A"
 | search title="$title$" owner IN $owner$ alert="$alert$" category="$category$" subcategory="$subcategory$" incident_id="$incident_id$"  $estado$ group_id="$group_id$" $tags$ $impact$ $urgency$ $priority$ $status$ $empresa$
 | eval dobulkedit=incident_id, doedit=" ", doquickassign=" ", doaction=" ", Endereco = Estado . " - " . Cidade , Localidade = mvindex(split(Localidade, "|"),0) 
-| table dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, title, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id, Cliente, Localidade, Endereco, Solucao, TipoServico, impact ,AbertoTT, _time, alert_close_time, owner, status, status_description,Impacto
+| table dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, title, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id, Cliente, Localidade, Endereco, Solucao, TipoServico, impact ,AbertoTT, _time, alert_close_time, owner, status, status_description,Impacto, siebel, metric
 | eval Impacto = case(impact = "performance", "Performance", impact = "low", "Baixo", impact = "medium", "Médio", impact = "high" , "Alto", true(), "N/A")
 | rename AbertoTT as "Ticket", alert_close_time as "Fim", Cliente as Empresa, title as Alerta, _time as Inicio
 | eval Fim = if(Fim = "0", "", substr(Fim,0,10))
 
 | convert ctime(Inicio) timeformat="%Y-%m-%d %H:%M:%S"
 
-| convert ctime(Fim) timeformat="%Y-%m-%d %H:%M:%S"</query>
+| convert ctime(Fim) timeformat="%Y-%m-%d %H:%M:%S"
+
+| search $urlSearch$
+</query>
           <earliest>$global_time.earliest$</earliest>
           <latest>$global_time.latest$</latest>
         </search>
@@ -358,6 +361,9 @@
         <drilldown>
           <set token="drilldown_incident_id">$row.incident_id$</set>
         </drilldown>
+        <fields>
+          dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, Alerta, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id, Empresa, Localidade, Endereco, Solucao, TipoServico, impact ,Ticket, Inicio, Fim, owner, status, status_description,Impacto
+        </fields>
       </table>
     </panel>
   </row>

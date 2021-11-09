@@ -109,92 +109,53 @@ for(var i=0; i < keys.length; i++) {
     document.getElementsByTagName('head')[0].appendChild(style);
 } 
 
-var d_1 = Epoch(24);
-console.log(d_1); 
-var d_2 = Epoch(48);
-console.log(d_2); 
-var d_3 = Epoch(72);
-console.log(d_3); 
-var d_4 = Epoch(96);
-console.log(d_4); 
-var d_5 = Epoch(120);
-console.log(d_5); 
 
-//console.log(d_1); 
-
-drilldownMapping = {
+var drilldownMapping = {
     "TOT": [],
     "UP": [],
     "DN": [        
         {
-            "name": "metrica",
-            "value": "link"
-        },
-        {
-            "name": "metrica",
-            "value": "linkState"
-        },
-        {
-            "name": "metrica",
-            "value": "status"
+            "value": "metric IN (\"link\",\"linkState\",\"status\")"
         }
     ],
-    "PAR": [
-        
-        {
-            "name": "metrica",
-            "value": "(sem definicao ainda)"
-        }
-    ],
+    "PAR": [],
     "ERR": [        
         {
-            "name": "metrica",
-            "value": "HA-STATUS"
-        },
-        {
-            "name": "metrica",
-            "value": "IN_ERRORS"
+            "value": "metric IN (\"HA-STATUS\",\"IN_ERRORS\")"
         }
     ],
     "LAT": [        
         {
-            "name": "metrica",
-            "value": "latency"
+            "value": "metric IN (\"latency\")"
         }
     ],
     "PAC": [        
         {
-            "name": "metrica",
-            "value": "packet_loss_percent"
+            "value": "metric IN (\"packet_loss_percent\")"
         }
     ],
     "INT": [        
         {
-            "name": "metrica",
-            "value": "not in ('link','linkState','status','HA-STATUS,'IN_ERRORS','latency','packet_loss_percent')"
+            "value": "NOT metric IN (\"link\",\"linkState\",\"status\",\"HA-STATUS\",\"IN_ERRORS\",\"latency\",\"packet_loss_percent\")"
         }
     ],
     "CHK_OK": [        
         {
-            "name": "metrica",
-            "value": "Assigned=*"
+            "value": "assigned=*"
         }
     ],
     "CHK_NOK": [        
         {
-            "name": "metrica",
-            "value": "not Assigned=*"
+            "value": "Not assigned=*"
         }
     ],
     "TTS": [        
         {
-            "name": "metrica",
             "value": "siebel=*"
         }
     ],
     "1D": [        
         {
-            "name": "metrica",
             "value": "Data_Abertura>=",
             "type":"function",
             "function":Epoch,
@@ -203,7 +164,6 @@ drilldownMapping = {
     ],
     "2D": [        
         {
-            "name": "metrica",
             "value": "Data_Abertura>=",
             "type":"function",
             "function":Epoch,
@@ -212,7 +172,6 @@ drilldownMapping = {
     ],
     "3D": [        
         {
-            "name": "metrica",
             "value": "Data_Abertura>=",
             "type":"function",
             "function":Epoch,
@@ -221,7 +180,6 @@ drilldownMapping = {
     ],
     "4D": [        
         {
-            "name": "metrica",
             "value": "Data_Abertura>=",
             "type":"function",
             "function":Epoch,
@@ -230,7 +188,6 @@ drilldownMapping = {
     ],
     "5D": [        
         {
-            "name": "metrica",
             "value": "Data_Abertura>=",
             "type":"function",
             "function":Epoch,
@@ -239,7 +196,6 @@ drilldownMapping = {
     ],
     ">5D": [        
         {
-            "name": "metrica",
             "value": "Data_Abertura<=",
             "type":"function",
             "function":Epoch,
@@ -252,25 +208,23 @@ function tableClick(e, object) {
 
     e.preventDefault();
 
-    args = ["Cliente=" + e.data["row.Cliente"]];
+    args = ["Empresa=" + e.data["row.Cliente"] + "*"];
 
     for(var i=0; i<drilldownMapping[e.field].length; i++) {
 
         if (drilldownMapping[e.field][i]["type"]=='function'){
-
-            args.push(drilldownMapping[e.field][i]["name"] + "=" + drilldownMapping[e.field][i]["value"] + drilldownMapping[e.field][i]["function"].apply(this, drilldownMapping[e.field][i]["args"]) );
+            args.push(drilldownMapping[e.field][i]["value"] + drilldownMapping[e.field][i]["function"].apply(this, drilldownMapping[e.field][i]["args"]) );
         }
-        else
-        {
-            args.push(drilldownMapping[e.field][i]["name"] + "=" + drilldownMapping[e.field][i]["value"]);
-        }
-        
-        
+        else{
+            args.push(drilldownMapping[e.field][i]["value"]);
+        } 
     }
 
-    args = args.join("&");
+    args = "urlSearch=" + encodeURI(args.join(" ")).replace(/=/g, "%3D");
 
     console.log(args);
+
+    window.open("/en-US/app/alert_manager/incident_posture?" + args, '_blank').focus();
 }
 
 mainTable.on("click:row", tableClick);
