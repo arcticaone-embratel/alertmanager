@@ -87,8 +87,6 @@ var TrocaCor = TableView.BaseCellRenderer.extend({
 //incident_posture?form.global_time.earliest=-7d&form.global_time.latest=now&form.owner=*&form.status=status!%3D%22*resolved%22%20status!%3D%22suppressed%22%20status!%3D%22closed*%22%20status!%3D%22cancelled*%22&form.s_incident_id=&form.s_title=&form.impact=Performance&form.empresa=ICATU%20SEGUROS%20S.A.&form.estado=*&form.flag_normalizado=N%C3%A3o&hideFilters=false
             if (cellData.field=='BDI')//${cliente}
                 conteudo = `<a href="#" onclick="window.open('entrega_bdi?form.cliente=${cliente}&form.solucao=');">BDI</a>`;
-
-            
         }
             
         $td.css({ 'background-color': colMapping[cellData.field], 'color': 'black' }).html(conteudo);
@@ -106,11 +104,16 @@ for(var i=0; i < keys.length; i++) {
     document.getElementsByTagName('head')[0].appendChild(style);
 } 
 
+//,,,,,,,,,,2D,3D,4D,5D
 drilldownMapping = {
     "TOT": [
         {
             "name": "Cliente",
             "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "TOT"
         }
     ],
     "UP": [
@@ -119,8 +122,158 @@ drilldownMapping = {
             "value": "Cliente"
         },
         {
-            "name": "total",
-            "value": "TOT"
+            "name": "metrica",
+            "value": "UP"
+        }
+    ],
+    "DN": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "DOWN"
+        }
+    ],
+    "PAR": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "PAR"
+        }
+    ],
+    "ERR": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "ERR"
+        }
+    ],
+    "LAT": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "LAT"
+        }
+    ],
+    "PAC": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "PAC"
+        }
+    ],
+    "INT": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "INT"
+        }
+    ],
+    "CHK_OK": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "CHK_OK"
+        }
+    ],
+    "CHK_NOK": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "CHK_NOK"
+        }
+    ],
+    "TTS": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "TTS"
+        }
+    ],
+    "1D": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "1D"
+        }
+    ],
+    "2D": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "2D"
+        }
+    ],
+    "3D": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "3D"
+        }
+    ],
+    "4D": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "4D"
+        }
+    ],
+    "5D": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": "5D"
+        }
+    ],
+    ">5D": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "metrica",
+            "value": ">5D"
         }
     ],
 }
@@ -132,7 +285,12 @@ function tableClick(e, object) {
     args = [];
 
     for(var i=0; i<drilldownMapping[e.field].length; i++) {
-        args.push(drilldownMapping[e.field][i]["name"] + "=" + e.data["row." + drilldownMapping[e.field][i]["value"]]);
+
+        if (drilldownMapping[e.field][i]["name"] == 'Cliente')
+            args.push(drilldownMapping[e.field][i]["name"] + "=" + e.data["row." + drilldownMapping[e.field][i]["value"]]);
+        else
+            args.push(drilldownMapping[e.field][i]["name"] + "=" + drilldownMapping[e.field][i]["value"]);
+
     }
 
     args = args.join("&");
