@@ -19,7 +19,7 @@ require([
 
     var mainTable = new TableView({
         id: "mainTable",
-        drilldown: "none",
+        drilldown: "cell",
         managerid: "tableSearch",
         pageSize: "10",
         wrap: true,
@@ -94,8 +94,8 @@ var TrocaCor = TableView.BaseCellRenderer.extend({
         $td.css({ 'background-color': colMapping[cellData.field], 'color': 'black' }).html(conteudo);
     }
 });
+
 mainTable.addCellRenderer(new TrocaCor());
-mainTable.render();
 
 var keys = Object.keys(colMapping);
 
@@ -104,6 +104,44 @@ for(var i=0; i < keys.length; i++) {
     style.type = 'text/css';
     style.innerHTML = 'th[data-sort-key="' + keys[i] + '"] { background-color:' + colMapping[keys[i]] + ' !important;border: 0 !important; border-bottom:2px solid black !important;}';
     document.getElementsByTagName('head')[0].appendChild(style);
-}    
+} 
+
+drilldownMapping = {
+    "TOT": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        }
+    ],
+    "UP": [
+        {
+            "name": "Cliente",
+            "value": "Cliente"
+        },
+        {
+            "name": "total",
+            "value": "TOT"
+        }
+    ],
+}
+
+function tableClick(e, object) {
+
+    e.preventDefault();
+
+    args = [];
+
+    for(var i=0; i<drilldownMapping[e.field].length; i++) {
+        args.push(drilldownMapping[e.field][i]["name"] + "=" + e.data["row." + drilldownMapping[e.field][i]["value"]]);
+    }
+
+    args = args.join("&");
+
+    console.log(args);
+}
+
+mainTable.on("click:row", tableClick);
+
+mainTable.render();
 
 });
