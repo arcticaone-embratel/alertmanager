@@ -64,6 +64,11 @@ var colMapping = {
 
 var conteudo = ''; var cliente = '';
 
+function Epoch(horas)
+{
+    return (Date.now()/1000)-(horas*60*60);
+}
+
 var TrocaCor = TableView.BaseCellRenderer.extend({ 
     canRender: function(cellData) {
         //console.log(cellData);                
@@ -104,176 +109,141 @@ for(var i=0; i < keys.length; i++) {
     document.getElementsByTagName('head')[0].appendChild(style);
 } 
 
-//,,,,,,,,,,2D,3D,4D,5D
+var d_1 = Epoch(24);
+console.log(d_1); 
+var d_2 = Epoch(48);
+console.log(d_2); 
+var d_3 = Epoch(72);
+console.log(d_3); 
+var d_4 = Epoch(96);
+console.log(d_4); 
+var d_5 = Epoch(120);
+console.log(d_5); 
+
+//console.log(d_1); 
+
 drilldownMapping = {
-    "TOT": [
+    "TOT": [],
+    "UP": [],
+    "DN": [        
         {
-            "name": "Cliente",
-            "value": "Cliente"
+            "name": "metrica",
+            "value": "link"
         },
         {
             "name": "metrica",
-            "value": "TOT"
-        }
-    ],
-    "UP": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
+            "value": "linkState"
         },
         {
             "name": "metrica",
-            "value": "UP"
-        }
-    ],
-    "DN": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
-        {
-            "name": "metrica",
-            "value": "DOWN"
+            "value": "status"
         }
     ],
     "PAR": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+        
         {
             "name": "metrica",
-            "value": "PAR"
+            "value": "(sem definicao ainda)"
         }
     ],
-    "ERR": [
+    "ERR": [        
         {
-            "name": "Cliente",
-            "value": "Cliente"
+            "name": "metrica",
+            "value": "HA-STATUS"
         },
         {
             "name": "metrica",
-            "value": "ERR"
+            "value": "IN_ERRORS"
         }
     ],
-    "LAT": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "LAT": [        
         {
             "name": "metrica",
-            "value": "LAT"
+            "value": "latency"
         }
     ],
-    "PAC": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "PAC": [        
         {
             "name": "metrica",
-            "value": "PAC"
+            "value": "packet_loss_percent"
         }
     ],
-    "INT": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "INT": [        
         {
             "name": "metrica",
-            "value": "INT"
+            "value": "not in ('link','linkState','status','HA-STATUS,'IN_ERRORS','latency','packet_loss_percent')"
         }
     ],
-    "CHK_OK": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "CHK_OK": [        
         {
             "name": "metrica",
-            "value": "CHK_OK"
+            "value": "Assigned=*"
         }
     ],
-    "CHK_NOK": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "CHK_NOK": [        
         {
             "name": "metrica",
-            "value": "CHK_NOK"
+            "value": "not Assigned=*"
         }
     ],
-    "TTS": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "TTS": [        
         {
             "name": "metrica",
-            "value": "TTS"
+            "value": "siebel=*"
         }
     ],
-    "1D": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "1D": [        
         {
             "name": "metrica",
-            "value": "1D"
+            "value": "Data_Abertura>=",
+            "type":"function",
+            "function":Epoch,
+            "args":[24]
         }
     ],
-    "2D": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "2D": [        
         {
             "name": "metrica",
-            "value": "2D"
+            "value": "Data_Abertura>=",
+            "type":"function",
+            "function":Epoch,
+            "args":[48]
         }
     ],
-    "3D": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "3D": [        
         {
             "name": "metrica",
-            "value": "3D"
+            "value": "Data_Abertura>=",
+            "type":"function",
+            "function":Epoch,
+            "args":[72]
         }
     ],
-    "4D": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "4D": [        
         {
             "name": "metrica",
-            "value": "4D"
+            "value": "Data_Abertura>=",
+            "type":"function",
+            "function":Epoch,
+            "args":[96]
         }
     ],
-    "5D": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    "5D": [        
         {
             "name": "metrica",
-            "value": "5D"
+            "value": "Data_Abertura>=",
+            "type":"function",
+            "function":Epoch,
+            "args":[120]
         }
     ],
-    ">5D": [
-        {
-            "name": "Cliente",
-            "value": "Cliente"
-        },
+    ">5D": [        
         {
             "name": "metrica",
-            "value": ">5D"
+            "value": "Data_Abertura<=",
+            "type":"function",
+            "function":Epoch,
+            "args":[120]
         }
     ],
 }
@@ -282,15 +252,20 @@ function tableClick(e, object) {
 
     e.preventDefault();
 
-    args = [];
+    args = ["Cliente=" + e.data["row.Cliente"]];
 
     for(var i=0; i<drilldownMapping[e.field].length; i++) {
 
-        if (drilldownMapping[e.field][i]["name"] == 'Cliente')
-            args.push(drilldownMapping[e.field][i]["name"] + "=" + e.data["row." + drilldownMapping[e.field][i]["value"]]);
-        else
-            args.push(drilldownMapping[e.field][i]["name"] + "=" + drilldownMapping[e.field][i]["value"]);
+        if (drilldownMapping[e.field][i]["type"]=='function'){
 
+            args.push(drilldownMapping[e.field][i]["name"] + "=" + drilldownMapping[e.field][i]["value"] + drilldownMapping[e.field][i]["function"].apply(this, drilldownMapping[e.field][i]["args"]) );
+        }
+        else
+        {
+            args.push(drilldownMapping[e.field][i]["name"] + "=" + drilldownMapping[e.field][i]["value"]);
+        }
+        
+        
     }
 
     args = args.join("&");
