@@ -251,20 +251,6 @@ owner = rodrigo.siqueira
 version = 8.2.2.1
 modtime = 1634593038.556439000
 
-[savedsearches/job-%20bdi_update_lookup]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = daniel.armendani
-version = 8.2.2.1
-modtime = 1634593038.562361000
-
-[savedsearches/job-bdi_siebel_update_lookup]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = daniel.armendani
-version = 8.2.2.1
-modtime = 1634818595.203292000
-
 [transforms/Equipamentos]
 version = 8.2.2.1
 modtime = 1634479878.653851000
