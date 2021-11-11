@@ -4,5 +4,5 @@
 #linha abaixo -all varre todos arquivos modificados
 git add --all
 #colocar abaixo a msg do q foi alterado antes de comitar...
-git commit -m "10nov21 - upload - bkp"
+git commit -m "11nov21 - bkp_inicial_dial"
 git push -u origin main
