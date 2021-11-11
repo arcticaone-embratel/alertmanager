@@ -1,4 +1,4 @@
-<dashboard script="painel_gerencial/js/table.js" theme="light">
+<dashboard script="painel_gerencial/js/table.js" stylesheet="painel_gerencial/css/fonts.css, painel_gerencial/css/panel.css" theme="light">
   <label>Painel Gerencial</label>
   <!--<row>
     <panel>
@@ -16,6 +16,7 @@
   <row>
     <panel>
       <html>
+        <a src="/static/app/alert_manager/painel_gerencial/img/SAG.png"></a>
         <table id="idTable" width="100%">
           <tr style="background-color: black; color: white; ">
             <th style="width: 10%">PARQUE</th>

@@ -104,7 +104,7 @@ access = read : [ admin ], write : [ admin ]
 export = none
 owner = rodrigo.siqueira
 version = 8.2.2.1
-modtime = 1636578008.948623000
+modtime = 1636659469.879092000
 
 [macros/tabelaGerencialSearch_bkp]
 access = read : [ * ]
@@ -280,7 +280,7 @@ modtime = 1634593038.572899000
 
 [views/incident_posture]
 version = 8.2.2.1
-modtime = 1636579840.279002000
+modtime = 1636656533.310088000
 
 [views/incident_posture__em_desenvolvimento_clone]
 access = read : [ admin ], write : [ admin ]
@@ -303,7 +303,7 @@ access = read : [ admin ], write : [ admin ]
 export = none
 owner = rodrigo.siqueira
 version = 8.2.2.1
-modtime = 1636398179.578450000
+modtime = 1636656980.827789000
 
 [views/relatorio_de_alertas_abertos_nas_ultimas_24_horas]
 owner = fernando.germando
@@ -422,3 +422,8 @@ modtime = 1636135865.251940000
 [lookups/siebel.csv]
 version = 8.2.2.1
 modtime = 1636613405.957874000
+
+[lookups/painel_gerencial_GRAF.csv]
+owner = danilo.capitol
+version = 8.2.2.1
+modtime = 1636658270.458054000

@@ -17,12 +17,39 @@ require([
         search: "| `tabelaGerencialSearch`"
     });
 
+    
+    var colMapping = {
+        'Cliente': 'rgb(220,218,213)',//1
+        'TOT': 'rgb(220,218,213)',//2
+        'UP': 'rgb(146,208,80)',//3
+        'DN': 'rgb(255,0,0)',//4
+        'PAR': 'rgb(255,255,0)',//5
+        'ERR': 'rgb(142,169,219)',//6
+        'LAT': 'rgb(142,169,219)',//7
+        'PAC': 'rgb(142,169,219)',//8
+        'INT': 'rgb(142,169,219)',  //9
+        'CHK_OK': 'rgb(255,230,153)',//10
+        'CHK_NOK': 'rgb(255,230,153)',//11
+        'TTS': 'rgb(255,192,0)',//12
+        '1D': 'rgb(255,192,0)',//13
+        '2D': 'rgb(255,192,0)',//14
+        '3D': 'rgb(255,192,0)',//15
+        '4D': 'rgb(255,192,0)',//16
+        '5D': 'rgb(255,192,0)',//17
+        '>5D': 'rgb(255,192,0)',//18
+        'SAG': 'rgb(208,206,206)',//19
+        'GRAF': 'rgb(208,206,206)',//20
+        'BDI': 'rgb(208,206,206)',//21
+        'BD': 'rgb(208,206,206)'//22
+    };
+
     var mainTable = new TableView({
         id: "mainTable",
         drilldown: "cell",
         managerid: "tableSearch",
         pageSize: "10",
         wrap: true,
+        fields: Object.keys(colMapping),
         format: {
             "3D": [
                 {
@@ -37,36 +64,22 @@ require([
         el: $("div#tableContainer")
     });//.render();
 
-var colMapping = {
-    'Cliente': 'rgb(220,218,213)',//1
-    'TOT': 'rgb(220,218,213)',//2
-    'UP': 'rgb(146,208,80)',//3
-    'DN': 'rgb(255,0,0)',//4
-    'PAR': 'rgb(255,255,0)',//5
-    'ERR': 'rgb(142,169,219)',//6
-    'LAT': 'rgb(142,169,219)',//7
-    'PAC': 'rgb(142,169,219)',//8
-    'INT': 'rgb(142,169,219)',  //9
-    'CHK_OK': 'rgb(255,230,153)',//10
-    'CHK_NOK': 'rgb(255,230,153)',//11
-    'TTS': 'rgb(255,192,0)',//12
-    '1D': 'rgb(255,192,0)',//13
-    '2D': 'rgb(255,192,0)',//14
-    '3D': 'rgb(255,192,0)',//15
-    '4D': 'rgb(255,192,0)',//16
-    '5D': 'rgb(255,192,0)',//17
-    '>5D': 'rgb(255,192,0)',//18
-    'SAG': 'rgb(208,206,206)',//19
-    'GRAF': 'rgb(208,206,206)',//20
-    'BDI': 'rgb(208,206,206)',//21
-    'BD': 'rgb(208,206,206)'//22
-};
-
 var conteudo = ''; var cliente = '';
 
 function Epoch(horas)
 {
     return (Date.now()/1000)-(horas*60*60);
+}
+
+function urlMapper(field, obj, args) {
+
+    if (field == "GRAF") {
+        return obj.data["row.URL"];
+    }
+
+    else {
+        return "/en-US/app/alert_manager/incident_posture?" + args;
+    }
 }
 
 var TrocaCor = TableView.BaseCellRenderer.extend({ 
@@ -83,15 +96,24 @@ var TrocaCor = TableView.BaseCellRenderer.extend({
         conteudo = cellData.value;
         if (conteudo=='icone')
         {
-            conteudo = `<a href="teste.html" onclick="alert('${cliente}');">icone</a>`;
-
+            console.log()
             if (cellData.field=='SAG')
-                conteudo = `<a href="teste.html" onclick="alert('${cliente}');">desativado</a>`;
+                conteudo = `<i class="icomoon-save-disk" />`;
+                //conteudo = `<img src="/static/app/alert_manager/painel_gerencial/img/SAG.png" />`;
+                
             if (cellData.field=='BD')
-                conteudo = `<a href="teste.html" onclick="alert('${cliente}');">desativado</a>`;
-//incident_posture?form.global_time.earliest=-7d&form.global_time.latest=now&form.owner=*&form.status=status!%3D%22*resolved%22%20status!%3D%22suppressed%22%20status!%3D%22closed*%22%20status!%3D%22cancelled*%22&form.s_incident_id=&form.s_title=&form.impact=Performance&form.empresa=ICATU%20SEGUROS%20S.A.&form.estado=*&form.flag_normalizado=N%C3%A3o&hideFilters=false
-            if (cellData.field=='BDI')//${cliente}
-                conteudo = `<a href="#" onclick="window.open('entrega_bdi?form.cliente=${cliente}&form.solucao=');">BDI</a>`;
+                conteudo = `<i class="icomoon-folder" />`;
+                //conteudo = `<img src="/static/app/alert_manager/painel_gerencial/img/BD.png" />`;
+                
+            if (cellData.field=='BDI')
+                conteudo = `<i class="icomoon-cabinet" />`;
+                //conteudo = `<img src="/static/app/alert_manager/painel_gerencial/img/BDI.png" />`;
+                
+            if (cellData.field=='GRAF')
+                conteudo = `<i class="icomoon-bar-graph" />`;
+                //conteudo = `<img src="/static/app/alert_manager/painel_gerencial/img/GRAF.png" />`;
+                
+                
         }
             
         $td.css({ 'background-color': colMapping[cellData.field], 'color': 'black' }).html(conteudo);
@@ -202,6 +224,14 @@ var drilldownMapping = {
             "args":[120]
         }
     ],
+    "GRAF": [
+        {
+            "value": "Data_Abertura<=",
+            "type":"function",
+            "function":Epoch,
+            "args":[120]
+        }
+    ]
 }
 
 function tableClick(e, object) {
@@ -222,9 +252,7 @@ function tableClick(e, object) {
 
     args = "urlSearch=" + encodeURI(args.join(" ")).replace(/=/g, "%3D");
 
-    console.log(args);
-
-    window.open("/en-US/app/alert_manager/incident_posture?" + args, '_blank').focus();
+    window.open(urlMapper(e.field, e, args), '_blank').focus();
 }
 
 mainTable.on("click:row", tableClick);
