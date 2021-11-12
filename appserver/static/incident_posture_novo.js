@@ -175,11 +175,6 @@ require([
         '        <div class="controls"><select name="impact" id="impact" disabled="disabled"></select></div>' +
         '      </div>' +
         '      <div class="control-group shared-controls-controlgroup">' +
-        '        <label for="novo" class="control-label">Falha/Data Check:</label>' +
-        '        <div class="controls"><select name="falha_datacheck" id="falha_datacheck" disabled="disabled"></select></div>' +
-        //'        <div class="controls" id="novoInput"></div>' +
-        '      </div>' +
-        '      <div class="control-group shared-controls-controlgroup">' +
         '         <label for="owner" class="control-label">Dono:</label>' +
         '         <div class="controls"><select name="owner" id="owner" disabled="disabled"></select></div>' +
         '      </div>' +
@@ -382,11 +377,11 @@ require([
                 
                 $td.children('[class="btn-pill"]').on("mouseover", function (e) {
                     e.stopPropagation();
-                    // console.log("+++++ open incident action menu +++++");
+                    console.log("+++++ open incident action menu +++++");
                     
                     var incidentId = $(this).parent().parent().find("td.incident_id").get(0).textContent;
 
-                    //console.log(incidentId);
+                    console.log(incidentId);
 
                     var listItems = $(".incident-menu li");
                     listItems.each(function (idx, li) {
@@ -439,12 +434,16 @@ require([
             console.log("teste");
             //debugger;
             // Only use the cell renderer for the specific field
-            return (cell.field==="app" || cell.field==="status_description" || cell.field==="Solucao" || cell.field==="alert" || cell.field==="incident_id" || cell.field==="job_id" || cell.field==="result_id"
-                 || cell.field==="status" || cell.field==="alert_time" || cell.field==="display_fields"
+            return (cell.field==="app" || cell.field==="status_description" || cell.field==="Solucao" 
+                 || cell.field==="alert" || cell.field==="incident_id" || cell.field==="job_id" 
+                 || cell.field==="result_id" || cell.field==="status" || cell.field==="alert_time" 
+                 || cell.field==="display_fields"
                  || cell.field==="search" || cell.field==="event_search" || cell.field==="earliest"
                  || cell.field==="latest" || cell.field==="impact" || cell.field==="urgency"
-                 || cell.field==="alert" || cell.field==="external_reference_id" || cell.field==="duplicate_count"
-                 || cell.field==="earliest_alert_time" || cell.field==="first_seen" || cell.field==="group" || cell.field==="group_id");
+                 || cell.field==="alert" || cell.field==="external_reference_id" 
+                 || cell.field==="duplicate_count" || cell.field==="earliest_alert_time" 
+                 || cell.field==="first_seen" || cell.field==="group" || cell.field==="group_id"
+                 || cell.field==="Falha_DataCheck" || cell.field==="Numero_TT");
 
         },
         render: function($td, cell) {
@@ -870,6 +869,11 @@ require([
                 var group_id =   $(this).parent().find("td.group_id").get(0).textContent;
                 var modal_title = "Incident";
                 var modal_id = "incident_id";
+                var falha_datacheck = $(this).parent().find("td.Falha_DataCheck").get(0).textContent;
+                var numero_tt_siebel = $(this).parent().find("td.Numero_TT").get(0).textContent;
+                if (numero_tt_siebel == "N/A") numero_tt_siebel = "";
+                if (falha_datacheck == "N/A") falha_datacheck = "";
+                //alert('falha_datacheck:'+falha_datacheck+'-numero_tt_siebel:'+numero_tt_siebel);
             }
             var status_ready = false;
             var owner_ready = false;
@@ -973,8 +977,10 @@ require([
                 $("#urgency").prop("disabled", false);
             }); //
 
+            $('#numero_tt_siebel').val(numero_tt_siebel);
+
             $.each(all_coments, function(key, val) {
-                if (key == falha_datacheck) {
+                if (val.txt == falha_datacheck) {
                     $('#falha_datacheck').append( $('<option></option>').attr("selected", "selected").val(val.txt).html(val.txt) )
                 } else {
                     $('#falha_datacheck').append( $('<option></option>').val(val.txt).html(val.txt) )
