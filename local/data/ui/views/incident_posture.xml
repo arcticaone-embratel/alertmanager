@@ -313,7 +313,7 @@
   </row>
   <row>
     <panel>
-      <title>Alertas recentes $urlSearch$</title>
+      <title>Alertas recentes</title>
       <table id="incident_overview">
         <search id="recent_alerts">
           <query>$makro_filter$ 

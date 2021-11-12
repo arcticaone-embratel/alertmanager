@@ -4,5 +4,5 @@
 #linha abaixo -all varre todos arquivos modificados
 git add --all
 #colocar abaixo a msg do q foi alterado antes de comitar...
-git commit -m "12nov21 - alterado js painel_gerencial/table.js"
+git commit -m "12nov21 - alterado macro tabela gerencial -> coluna PAR"
 git push -u origin main
