@@ -1,0 +1,29 @@
+<dashboard>
+  <label>Relatorio de alertas abertos nas ultimas 24 horas</label>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>|inputlookup incidents
+| eval data_duration = relative_time(now(), "-48h@h")
+| where alert_time &gt; data_duration
+
+| eval DataAbertura =  strftime(alert_time,"%d/%m/%y %H:%M:%S")
+| eval DataClear = if(alert_close_time &gt; 0, strftime(alert_close_time,"%d/%m/%y %H:%M:%S"), "")
+| sort 0 - alert_time
+| table DataAbertura host Solucao title metric index Cliente status  DataClear</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

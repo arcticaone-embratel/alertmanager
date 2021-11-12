@@ -252,7 +252,10 @@ function tableClick(e, object) {
 
     args = "urlSearch=" + encodeURI(args.join(" ")).replace(/=/g, "%3D");
 
-    window.open(urlMapper(e.field, e, args), '_blank').focus();
+    var url = urlMapper(e.field, e, args);
+    console.log(url);
+
+    if (url!=null) window.open(url, '_blank').focus();
 }
 
 mainTable.on("click:row", tableClick);
