@@ -443,10 +443,13 @@ require([
                  || cell.field==="alert" || cell.field==="external_reference_id" 
                  || cell.field==="duplicate_count" || cell.field==="earliest_alert_time" 
                  || cell.field==="first_seen" || cell.field==="group" || cell.field==="group_id"
-                 || cell.field==="Falha_DataCheck" || cell.field==="Numero_TT");
+                 || cell.field==="Falha_DataCheck" || cell.field==="Numero_TT" 
+                 || cell.field==="ident_primesys"
+                 );
 
         },
         render: function($td, cell) {
+            //alert(cell.field);
             if (cell.field != 'app') {
             // ADD class to cell -> CSS
             if (cell.field == 'alert') {
@@ -480,6 +483,10 @@ require([
             return true;
         },
         setup: function($container,rowData) {
+
+            ident_primesys = _(rowData.cells).find(function (cell) {
+               return cell.field === 'ident_primesys';
+            });
 
             incident_id = _(rowData.cells).find(function (cell) {
                return cell.field === 'incident_id';
@@ -871,8 +878,11 @@ require([
                 var modal_id = "incident_id";
                 var falha_datacheck = $(this).parent().find("td.Falha_DataCheck").get(0).textContent;
                 var numero_tt_siebel = $(this).parent().find("td.Numero_TT").get(0).textContent;
+                var ident_primesys = $(this).parent().find("td.ident_primesys").get(0).textContent;
                 if (numero_tt_siebel == "N/A") numero_tt_siebel = "";
                 if (falha_datacheck == "N/A") falha_datacheck = "";
+                if (ident_primesys == "N/A") ident_primesys = "";
+                //alert(ident_primesys);
                 //alert('falha_datacheck:'+falha_datacheck+'-numero_tt_siebel:'+numero_tt_siebel);
             }
             var status_ready = false;
@@ -978,6 +988,8 @@ require([
             }); //
 
             $('#numero_tt_siebel').val(numero_tt_siebel);
+            //se veio da integracao nao pode sofrer alteracao...
+            if (ident_primesys!="") $('#numero_tt_siebel').prop('readonly', true);
 
             $.each(all_coments, function(key, val) {
                 if (val.txt == falha_datacheck) {
@@ -1063,7 +1075,7 @@ require([
                 }
             });
 //--------------------
-        $("label:contains('Nro TT:')").after($('<sup />').append($('<a />').text('?').addClass("btnModalInfo").addClass("btnModalInfo").attr('id', 'numerottsiebel_tooltip').attr("href", "#").attr("title",  "Numeracao TT gerada direto via Siebel").attr("data-toggle", "modal").attr("data-target", "#desc3")));
+        $("label:contains('Nro TT:')").after($('<sup />').append($('<a />').text('?').addClass("btnModalInfo").addClass("btnModalInfo").attr('id', 'numerottsiebel_tooltip').attr("href", "#").attr("title",  "Numeração TT gerada via Siebel").attr("data-toggle", "modal").attr("data-target", "#desc3")));
         $("label:contains('Nro TT:')").attr("style","float:left");
         $('#numerottsiebel_tooltip').tooltip();
         //--------------------

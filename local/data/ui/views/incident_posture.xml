@@ -333,9 +333,12 @@
 | fillnull Estado value="N/A"
 | search title="$title$" owner IN $owner$ alert="$alert$" category="$category$" subcategory="$subcategory$" incident_id="$incident_id$"  $estado$ group_id="$group_id$" $tags$ $impact$ $urgency$ $priority$ $status$ $empresa$
 | eval dobulkedit=incident_id, doedit=" ", doquickassign=" ", doaction=" ", Endereco = Estado . " - " . Cidade , Localidade = mvindex(split(Localidade, "|"),0) 
-| table dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, title, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id, Cliente, Localidade, Endereco, Solucao, TipoServico, impact ,AbertoTT, _time, alert_close_time, owner, status, status_description,Impacto, siebel, metric, numero_tt_siebel, falha_datacheck
+
+| spath input=siebel
+
+| table dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, title, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id, Cliente, Localidade, Endereco, Solucao, TipoServico, impact ,AbertoTT, _time, alert_close_time, owner, status, status_description,Impacto, siebel, metric, numero_tt_siebel, falha_datacheck, Identificador_Primesys
 | eval Impacto = case(impact = "performance", "Performance", impact = "low", "Baixo", impact = "medium", "Médio", impact = "high" , "Alto", true(), "N/A")
-| rename AbertoTT as "Ticket", alert_close_time as "Fim", Cliente as Empresa, title as Alerta, _time as Inicio, numero_tt_siebel as Numero_TT, falha_datacheck as Falha_DataCheck
+| rename AbertoTT as "Ticket", alert_close_time as "Fim", Cliente as Empresa, title as Alerta, _time as Inicio, numero_tt_siebel as Numero_TT, falha_datacheck as Falha_DataCheck, Identificador_Primesys as ident_primesys
 | eval Fim = if(Fim = "0", "", substr(Fim,0,10))
 
 | convert ctime(Inicio) timeformat="%Y-%m-%d %H:%M:%S"
@@ -364,7 +367,7 @@
         <drilldown>
           <set token="drilldown_incident_id">$row.incident_id$</set>
         </drilldown>
-        <fields>dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, Alerta, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id,Numero_TT,Falha_DataCheck, Empresa, Localidade, Endereco, Solucao, TipoServico, impact ,Ticket, Inicio, Fim, owner, status, status_description,Impacto</fields>
+        <fields>dobulkedit, doedit, doquickassign, doaction, incident_id, job_id, result_id, alert, host, Alerta, impact, urgency, search, event_search, earliest, latest, display_fields, alert_time, external_reference_id, duplicate_count, earliest_alert_time, first_seen, group, group_id,Numero_TT,Falha_DataCheck, Empresa, Localidade, Endereco, Solucao, TipoServico, impact ,Ticket, Inicio, Fim, owner, status, status_description,Impacto,ident_primesys</fields>
       </table>
     </panel>
   </row>
