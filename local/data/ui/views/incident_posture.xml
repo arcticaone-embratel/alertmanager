@@ -46,6 +46,11 @@
         <earliest>-7d</earliest>
         <latest>now</latest>
       </default>
+      <change>
+        <condition value="">
+          <set token="incident_id">*</set>
+        </condition>
+      </change>
     </input>
     <input id="customInputOwner" type="multiselect" token="owner" searchWhenChanged="true">
       <label>Owner:</label>
@@ -166,6 +171,14 @@
       <choice value="Não">Não</choice>
       <default>Não</default>
       <initialValue>Não</initialValue>
+      <change>
+        <condition value="Sim">
+          <set token="indexFilter"></set>
+        </condition>
+        <condition value="Não">
+          <set token="indexFilter">1=1</set>
+        </condition>
+      </change>
     </input>
   </fieldset>
   <row>
@@ -319,7 +332,7 @@
       <title>Alertas recentes</title>
       <table id="incident_overview">
         <search id="recent_alerts">
-          <query>$makro_filter$ 
+          <query>`all_alerts_novo("$indexFilter$")`
           | eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$"))
 | eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$"))
 | fillnull value=0 relative_earliest
@@ -328,6 +341,10 @@
 | eval FiltroNormalizado = if("$flag_normalizado$" = "Sim", 0,  relative_time(relative_earliest, "-1d"))
 | where (_time &gt;= FiltroNormalizado)
 
+```|if $status$=="closed"
+| union
+  [ search index=alert_manager where marker = `environment`]```
+  
 | sort 0 - _time
 | fillnull value="unknown" owner, status, status_description, impact, urgency, priority, group_id 
 | fillnull Estado value="N/A"

@@ -280,7 +280,7 @@ modtime = 1636739959.269910000
 
 [views/incident_posture]
 version = 8.2.2.1
-modtime = 1636988712.576060000
+modtime = 1637012244.625078000
 
 [views/incident_posture__em_desenvolvimento_clone]
 access = read : [ admin ], write : [ admin ]
@@ -427,3 +427,17 @@ modtime = 1636959007.106208000
 owner = danilo.capitol
 version = 8.2.2.1
 modtime = 1636739958.849649000
+
+[macros/all_alerts_novo%283%29]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1637011215.407566000
+
+[macros/all_alerts_novo%281%29]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = rodrigo.siqueira
+version = 8.2.2.1
+modtime = 1637012224.093246000

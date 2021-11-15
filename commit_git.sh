@@ -4,5 +4,5 @@
 #linha abaixo -all varre todos arquivos modificados
 git add --all
 #colocar abaixo a msg do q foi alterado antes de comitar...
-git commit -m "15nov21 - nao permite alterar campo tt se veio da integracao siebel"
+git commit -m "15nov21 - rodrigao alterado seach principal com index normalizado"
 git push -u origin main
