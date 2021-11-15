@@ -273,6 +273,8 @@
       <single id="sv_critical">
         <search>
           <query>| `all_alerts_single_trend_novo` 
+| union
+  [ search index=alert_manager where marker = `environment`]
 | search title = "*$s_title$*"
 | eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$")) 
 | eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$")) 

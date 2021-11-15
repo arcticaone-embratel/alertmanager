@@ -47,7 +47,7 @@ require([
         id: "mainTable",
         drilldown: "cell",
         managerid: "tableSearch",
-        pageSize: "10",
+        pageSize: "100",
         wrap: true,
         fields: Object.keys(colMapping),
         format: {

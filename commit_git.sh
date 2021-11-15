@@ -4,5 +4,5 @@
 #linha abaixo -all varre todos arquivos modificados
 git add --all
 #colocar abaixo a msg do q foi alterado antes de comitar...
-git commit -m "12nov21 - gui alterou macros/dash p/ funcionar os numeros do quadro"
+git commit -m "15nov21 - alterado search quadro normalizado / horario expurgo / painel gerencial 100 per page"
 git push -u origin main
