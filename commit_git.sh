@@ -4,5 +4,5 @@
 #linha abaixo -all varre todos arquivos modificados
 git add --all
 #colocar abaixo a msg do q foi alterado antes de comitar...
-git commit -m "16nov21 - alterado dash gerencial -> NomeDrilldown / csv alterada"
+git commit -m "16nov21 - gui -> corrigidos tokens dash templateAlarme zerada / etc..."
 git push -u origin main

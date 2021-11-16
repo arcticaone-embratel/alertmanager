@@ -1,0 +1,21 @@
+templateName,thresholdDuration,thresholdIndex,thresholdMessage,thresholdMetric,thresholdSeverityCode,thresholdType,thresholdValue
+Template FORTINET,10,,CPU acima de %thresholdValue%% por mais de 10 minutos,cpu,4,>,50
+Template FORTINET,10,,Memoria acima de %thresholdValue%% por mais de 10 minutos,mem,4,>,50
+Template FORTINET,10,,Disco acima de %thresholdValue%% por mais de 10 minutos,disk,4,>,50
+Template FORTINET,10,*,Quantidade de sessões na interface %thresholdIndex% excedeu o valor de %thresholdValue%,session,1,>,50
+Template FORTINET,10,*,Link acusou mais de %thresholdValue%% de utilização de banda,bandwidth_perc_1m,4,>,70
+Template FORTINET,10,StandAlone,Erro de coleta no equipamento ,HA-STATUS,4,=,erro de coleta
+Template FORTINET,5,StandAlone,Equipamento com status disable,HA-STATUS,3,=,disabled
+Template FORTINET,5,Primário,Equipamento HA primário com status diferente de ENABLE,HA-STATUS,4,=,disabled
+Template FORTINET,5,Secundário,Equipamento HA secundário com status diferente de ENABLE,HA-STATUS,4,=,disabled
+Template FORTINET,10,*,A Latência da interface %thresholdIndex% excedeu o valor do %thresholdValue%,latency,4,>,100
+Template FORTINET,10,*,A perda de pacotes da interface %thresholdIndex% excedeu o valor do %thresholdValue%%,packet_loss_percent,4,>,1
+Template FORTINET,10,*,O Jitter da interface %thresholdIndex% excedeu o valor de %thresholdValue%,jitter,4,>,100
+Template FORTINET,10,*,Link acusou erros por mais de 2 coletas  na interface %thresholdIndex%,tx_errors,4,>,0
+Template FORTINET,5,*,Link %thresholdIndex% entrou em status %value%.,linkState,1,!=,STABLE
+Template FORTINET,10,*,Link acusou mais de %thresholdValue%% de utilização de banda na interface %thresholdIndex%,BandwidthInUsagePerc,4,>,70
+Template FORTINET,10,*,Link acusou mais de %thresholdValue%% de utilização de banda  na interface %thresholdIndex%,BandwidthOutUsagePerc,4,>,70
+Template FORTINET,10,*,Link acusou erros por mais de 2 coletas  na interface %thresholdIndex%,IN_ERRORS,4,>,0
+Template FORTINET,10,*,Link acusou erros por mais de 2 coletas  na interface %thresholdIndex%,OUT_ERRORS,4,>,0
+Template FORTINET,10,*,Link acusou erros por mais de 2 coletas  na interface %thresholdIndex%,IN_DISCARDS,4,>,0
+Template FORTINET,10,*,Link acusou erros por mais de 2 coletas  na interface %thresholdIndex%,OUT_DISCARDS,4,>,0
