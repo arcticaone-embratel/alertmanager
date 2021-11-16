@@ -934,7 +934,7 @@ require([
 '      </div>' +
 '      <div class="modal-footer">' +
 '        <button type="button" class="btn cancel modal-btn-cancel pull-left" data-dismiss="modal">Cancelar</button>' +
-'        <button type="button" class="btn btn-primary" id="modal-save" disabled>Save</button>' +
+'        <button type="button" class="btn btn-primary" id="modal-save" disabled>Salvar</button>' +
 '      </div>' +
 '    </div>' +
 '</div>';

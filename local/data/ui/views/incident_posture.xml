@@ -286,8 +286,6 @@
       <single id="sv_critical">
         <search>
           <query>| `all_alerts_single_trend_novo` 
-| union
-  [ search index=alert_manager where marker = `environment`]
 | search title = "*$s_title$*"
 | eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$")) 
 | eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$")) 
@@ -340,11 +338,6 @@
 | where _time &gt;= relative_earliest AND _time &lt;= relative_latest
 | eval FiltroNormalizado = if("$flag_normalizado$" = "Sim", 0,  relative_time(relative_earliest, "-1d"))
 | where (_time &gt;= FiltroNormalizado)
-
-```|if $status$=="closed"
-| union
-  [ search index=alert_manager where marker = `environment`]```
-  
 | sort 0 - _time
 | fillnull value="unknown" owner, status, status_description, impact, urgency, priority, group_id 
 | fillnull Estado value="N/A"

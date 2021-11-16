@@ -239,7 +239,11 @@ function tableClick(e, object) {
 
     e.preventDefault();
 
-    args = ["Empresa=" + e.data["row.Cliente"] + "*"];
+    var empresa = e.data["row.Cliente"];
+
+    if (e.data["row.NomeDrilldown"]!=null) empresa=e.data["row.NomeDrilldown"];
+
+    args = ["Empresa=*" + empresa + "*"];
 
     for(var i=0; i<drilldownMapping[e.field].length; i++) {
 

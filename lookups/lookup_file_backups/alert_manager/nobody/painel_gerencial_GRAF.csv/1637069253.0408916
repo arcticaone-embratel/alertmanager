@@ -1,0 +1,3 @@
+Cliente,URL
+GERD,/app/gerdau/performance?form.field1.earliest=-24h%40h&amp;amp;form.field1.latest=now
+BRF,/app/brf/performance?form.field1.earliest=-24h%40h&amp;form.field1.latest=now
