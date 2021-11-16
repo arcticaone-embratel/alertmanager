@@ -39,6 +39,7 @@ require([
         //alert('carregou');
         $(".show-global-filters").text("Mostrar filtros");
         $(".hide-global-filters").text("Esconder filtros");
+        
          //each(function( index ) {
             //alert( index + ": " + $( this ).text() );
          //});
@@ -335,7 +336,9 @@ require([
     var IconRenderer = TableView.BaseCellRenderer.extend({
         canRender: function(cell) {
             // Only use the cell renderer for the specific field
-            return (cell.field === "dosearch" || cell.field === "dobulkedit" || cell.field === "doedit" || cell.field === "owner" || cell.field === "doquickassign" || cell.field === "doaction" );
+            return (cell.field === "dosearch" || cell.field === "dobulkedit" 
+            || cell.field === "doedit" || cell.field === "owner" || cell.field === "doquickassign" 
+            || cell.field === "doaction");
         },
         render: function($td, cell) {
             if(cell.field=="owner") {
@@ -409,6 +412,9 @@ require([
                     var icon = 'user';
                     var tooltip = "Assign to me";
                 }
+                else if (cell.field=="ident_primesys") {
+                    //console.log('chegou ident_primesys');
+                }
 
                 var rendercontent = '<a class="btn-pill" data-toggle="tooltip" data-placement="top" title="<%-tooltip%>"><i class="icon-<%-icon%>"></i><span class="hide-text">Inspect</span></a>';
                 //var rendercontent='<div style="float:left; max-height:22px; margin:0px;"><i class="icon-<%-icon%>" >&nbsp;</i></div>';
@@ -431,7 +437,7 @@ require([
         
     var HiddenCellRenderer = TableView.BaseCellRenderer.extend({
         canRender: function(cell) {
-            console.log("teste");
+            //console.log("HiddenCellRenderer");
             //debugger;
             // Only use the cell renderer for the specific field
             return (cell.field==="app" || cell.field==="status_description" || cell.field==="Solucao" 
