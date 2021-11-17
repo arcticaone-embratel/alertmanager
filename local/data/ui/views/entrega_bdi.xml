@@ -5,7 +5,7 @@
     <panel id="headerPanel">
       <html>
         <h1>
-          Consulta BDI
+          <table><tr><td width="95%">Consulta BDI</td><td align="right"><img src="/static/app/alert_manager/painel_gerencial/img/logo-embratel.png" style="max-width: 124px;" /></td></tr></table>
         </h1>
       </html>
     </panel>

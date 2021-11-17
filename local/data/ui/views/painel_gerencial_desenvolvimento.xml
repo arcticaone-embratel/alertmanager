@@ -1,22 +1,19 @@
 <dashboard script="painel_gerencial/js/table.js" stylesheet="painel_gerencial/css/fonts.css, painel_gerencial/css/panel.css" theme="light">
   <label>Painel Gerencial</label>
-  <!--<row>
-    <panel>
-      <table>
-        <search>
-          <query>| inputlookup mockTTsGerencial.csv</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
-        </search>
-        <option name="drilldown">none</option>
-      </table>
+  <fieldset submitButton="false" autoRun="false"></fieldset>
+  <row id="headerRow">
+    <panel id="headerPanel">
+      <html>
+        <h1>
+          <table><tr><td width="95%">Painel Gerencial</td><td align="right"><img src="/static/app/alert_manager/painel_gerencial/img/logo-embratel.png" style="max-width: 124px;" /></td></tr></table>
+        </h1>
+      </html>
     </panel>
   </row>
-  -->
   <row>
     <panel>
       <html>
-        <a src="/static/app/alert_manager/painel_gerencial/img/SAG.png"></a>
+        <a src="/static/app/alert_manager/painel_gerencial/img/SAG.png"/>
         <table id="idTable" width="100%">
           <tr style="background-color: black; color: white; ">
             <th style="width: 10%">PARQUE</th>
@@ -31,6 +28,21 @@
           <div id="labelContainer"/>
           <div id="tableContainer"/>
         </div>
+      </html>
+    </panel>
+  </row>
+  <row id="cssRow">
+    <panel id="cssPanel" depends="$seeCSS$">
+      <html>
+        <style>
+          div.main-section-body.dashboard-body {
+            padding: 0;
+          }
+          
+          div.dashboard-header.dashboard-header-dashboardheader {
+            display: none;
+          }
+        </style>
       </html>
     </panel>
   </row>
