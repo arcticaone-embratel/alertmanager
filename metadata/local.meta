@@ -100,11 +100,11 @@ version = 8.2.2.1
 modtime = 1634479878.592982000
 
 [macros/tabelaGerencialSearch]
-access = read : [ admin ], write : [ admin ]
+access = read : [ admin, alert_manager, alert_manager_user, user ], write : [ admin ]
 export = none
 owner = rodrigo.siqueira
 version = 8.2.2.1
-modtime = 1637158051.934760000
+modtime = 1637181320.815677000
 
 [macros/tabelaGerencialSearch_bkp]
 access = read : [ * ]
@@ -299,11 +299,11 @@ version = 8.2.2.1
 modtime = 1634479878.666888000
 
 [views/painel_gerencial_desenvolvimento]
-access = read : [ admin ], write : [ admin ]
+access = read : [ admin, alert_manager, alert_manager_user, user ], write : [ admin ]
 export = none
 owner = rodrigo.siqueira
 version = 8.2.2.1
-modtime = 1637155648.581594000
+modtime = 1637181034.632007000
 
 [views/relatorio_de_alertas_abertos_nas_ultimas_24_horas]
 owner = fernando.germando
@@ -326,8 +326,11 @@ version = 8.2.2.1
 modtime = 1636739959.128446000
 
 []
+access = read : [ * ], write : [ admin, alert_manager, alert_manager_user, user ]
+export = system
+owner = nobody
 version = 8.2.2.1
-modtime = 1634581689.943985000
+modtime = 1637181183.933179000
 
 [props/siebel_ret]
 owner = paulo.bianchi
@@ -421,7 +424,7 @@ modtime = 1636739958.112647000
 
 [lookups/siebel.csv]
 version = 8.2.2.1
-modtime = 1637131803.195612000
+modtime = 1637218207.235779000
 
 [lookups/painel_gerencial_GRAF.csv]
 owner = danilo.capitol
@@ -444,7 +447,7 @@ modtime = 1637012224.093246000
 
 [lookups/incidents-Backup-November.csv]
 version = 8.2.2.1
-modtime = 1637118005.617882000
+modtime = 1637204407.363664000
 
 [lookups/chamados_producao.csv]
 owner = paulo.bianchi
