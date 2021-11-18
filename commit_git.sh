@@ -4,5 +4,5 @@
 #linha abaixo -all varre todos arquivos modificados
 git add --all
 #colocar abaixo a msg do q foi alterado antes de comitar...
-git commit -m "18nov21 - bkp inicial dia"
+git commit -m "18nov21 - alterado csv graf multiplan"
 git push -u origin main

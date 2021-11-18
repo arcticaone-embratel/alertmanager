@@ -2,7 +2,7 @@ Cliente,URL,NomeDrilldown
 GERD,/app/gerdau/performance?form.field1.earliest=-24h%40h&amp;amp;form.field1.latest=now,
 BRF,/app/brf/performance?form.field1.earliest=-24h%40h&amp;form.field1.latest=now,
 ICATU,/app/icatu_seguros/performance?form.field1.earliest=-24h%40h&form.field1.latest=now,
-MULT,/app/Multiplan/performance?form.field1.earliest=-24h%40h&form.field1.latest=now,Empresa=*SHOPPING* OR Empresa=*CONDOMINIO* OR Empresa=*CONSORCIO*
+MULT,/app/Multiplan/performance?form.field1.earliest=-24h%40h&form.field1.latest=now,
 PBL,/app/PB_Lopes/performance?form.field1.earliest=-24h%40h&form.field1.latest=now,
 USIM,/app/usiminas/performance?form.field1.earliest=-24h%40h&form.field1.latest=now,
 BRAD,,Empresa=*LOSANGO* OR Empresa=*BRADESCO*

@@ -264,7 +264,7 @@ access = read : [ * ], write : [ admin ]
 export = system
 owner = fernando.germando
 version = 8.2.2.1
-modtime = 1636739959.266199000
+modtime = 1637259400.033442000
 
 [views/analise_de_metricas]
 owner = fernando.germando
@@ -272,11 +272,11 @@ version = 8.2.2.1
 modtime = 1636739959.268466000
 
 [views/entrega_bdi]
-access = read : [ admin ], write : [ admin ]
+access = read : [ admin, alert_manager, alert_manager_user, user ], write : [ admin ]
 export = none
 owner = rodrigo.siqueira
 version = 8.2.2.1
-modtime = 1637155726.574812000
+modtime = 1637242111.473980000
 
 [views/incident_posture]
 version = 8.2.2.1
@@ -429,7 +429,7 @@ modtime = 1637218207.235779000
 [lookups/painel_gerencial_GRAF.csv]
 owner = danilo.capitol
 version = 8.2.2.1
-modtime = 1637087301.192791000
+modtime = 1637267427.364150000
 
 [macros/all_alerts_novo%283%29]
 access = read : [ * ], write : [ admin ]
@@ -458,3 +458,8 @@ modtime = 1637097188.280633000
 owner = paulo.bianchi
 version = 8.2.2.1
 modtime = 1637098598.878652000
+
+[lookups/producao_abertos.csv]
+owner = paulo.bianchi
+version = 8.2.2.1
+modtime = 1637261388.863553000
