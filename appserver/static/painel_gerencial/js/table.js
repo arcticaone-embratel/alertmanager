@@ -78,7 +78,7 @@ function urlMapper(field, obj, args) {
     }
 
     else {
-        return "/en-US/app/alert_manager/incident_posture_paulo?" + args;
+        return "/en-US/app/alert_manager/incident_posture?" + args;
     }
 }
 
