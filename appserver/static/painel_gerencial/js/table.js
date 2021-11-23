@@ -255,7 +255,7 @@ function tableClick(e, object) {
         } 
     }
 
-    args = "urlSearch=" + encodeURI(args.join(" ")).replace(/=/g, "%3D");
+    args = "urlSearch=" + encodeURI(args.join(" ")).replace(/=/g, "%3D") + "&form.global_time.earliest=0&form.global_time.latest=now&form.flag_normalizado=Sim";
 
     var url = urlMapper(e.field, e, args);
     console.log(url);
