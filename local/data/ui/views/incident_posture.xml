@@ -13,7 +13,7 @@
   <label>Incident Posture - [EM HOMOLOGAÇÃO]</label>
   <search id="base_single_search">
     <!--<query>`all_alerts_single_trend` | append [makeresults] | timechart span=1d count by priority | fillnull value=0 informational, low, medium, high, critical</query>-->
-    <query>| `all_alerts_single_trend_novo`|search title="*$s_title$*" AND owner IN $owner$ AND incident_id = "$s_incident_id$" AND impact IN $impact$ AND Cliente IN $empresa$ AND Estado IN $estado$| eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$")) 
+    <query>| `all_alerts_single_trend_novo`|search title="*$s_title$*" AND owner IN $owner$ AND incident_id = "$s_incident_id$" AND Cliente IN $empresa$ AND Estado IN $estado$| eval relative_earliest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.earliest$")) 
 | eval relative_latest = if (isnum("$global_time.earliest$"),"$global_time.earliest$", relative_time(now(), "$global_time.latest$")) 
 | fillnull value=0 relative_earliest 
 | fillnull value=9999999999999999 relative_latest 
